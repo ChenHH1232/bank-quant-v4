@@ -1,0 +1,2642 @@
+[
+  {
+    "code": "002142.XSHE",
+    "display_name": "宁波银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "002807.XSHE",
+    "display_name": "江阴银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2342,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2342,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      }
+    ]
+  },
+  {
+    "code": "002839.XSHE",
+    "display_name": "张家港行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2248,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2248,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 37,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 37,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 37,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 37,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 7,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 37,
+        "detail": "raw_rows=74, current_only_rows=37, report_type_counts={1: 37, 0: 37}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 37,
+        "detail": "raw_rows=74, current_only_rows=37, report_type_counts={1: 37, 0: 37}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 27,
+        "detail": "raw_rows=54, current_only_rows=27, report_type_counts={1: 27, 0: 27}"
+      }
+    ]
+  },
+  {
+    "code": "002936.XSHE",
+    "display_name": "郑州银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1843,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1843,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 31,
+        "detail": "missing_periods=['2018q1', '2018q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 31,
+        "detail": "missing_periods=['2018q1', '2018q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 6,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      }
+    ]
+  },
+  {
+    "code": "002948.XSHE",
+    "display_name": "青岛银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1766,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1766,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 19,
+        "detail": "raw_rows=38, current_only_rows=19, report_type_counts={1: 19, 0: 19}"
+      }
+    ]
+  },
+  {
+    "code": "002958.XSHE",
+    "display_name": "青农商行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1722,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1722,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      }
+    ]
+  },
+  {
+    "code": "002966.XSHE",
+    "display_name": "苏州银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1634,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1634,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 28,
+        "detail": "missing_periods=['2019q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 28,
+        "detail": "missing_periods=['2019q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 27,
+        "detail": "raw_rows=54, current_only_rows=27, report_type_counts={1: 27, 0: 27}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 27,
+        "detail": "raw_rows=54, current_only_rows=27, report_type_counts={1: 27, 0: 27}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 17,
+        "detail": "raw_rows=34, current_only_rows=17, report_type_counts={1: 17, 0: 17}"
+      }
+    ]
+  },
+  {
+    "code": "600000.XSHG",
+    "display_name": "浦发银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "600015.XSHG",
+    "display_name": "华夏银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "600016.XSHG",
+    "display_name": "民生银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "600036.XSHG",
+    "display_name": "招商银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "600908.XSHG",
+    "display_name": "无锡银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2329,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2329,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 37,
+        "detail": "raw_rows=74, current_only_rows=37, report_type_counts={1: 37, 0: 37}"
+      }
+    ]
+  },
+  {
+    "code": "600919.XSHG",
+    "display_name": "江苏银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2365,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2365,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      }
+    ]
+  },
+  {
+    "code": "600926.XSHG",
+    "display_name": "杭州银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2310,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2310,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 40,
+        "detail": "missing_periods=['2016q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 30,
+        "detail": "raw_rows=60, current_only_rows=30, report_type_counts={1: 30, 0: 30}"
+      }
+    ]
+  },
+  {
+    "code": "600928.XSHG",
+    "display_name": "西安银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1739,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1739,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 24,
+        "detail": "raw_rows=48, current_only_rows=24, report_type_counts={1: 24, 0: 24}"
+      }
+    ]
+  },
+  {
+    "code": "601009.XSHG",
+    "display_name": "南京银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      }
+    ]
+  },
+  {
+    "code": "601077.XSHG",
+    "display_name": "渝农商行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1578,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1578,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 25,
+        "detail": "raw_rows=50, current_only_rows=25, report_type_counts={1: 25, 0: 25}"
+      }
+    ]
+  },
+  {
+    "code": "601128.XSHG",
+    "display_name": "常熟银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2324,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2324,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 40,
+        "detail": "missing_periods=['2016q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      }
+    ]
+  },
+  {
+    "code": "601166.XSHG",
+    "display_name": "兴业银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "601169.XSHG",
+    "display_name": "北京银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 47,
+        "detail": "raw_rows=94, current_only_rows=47, report_type_counts={1: 47, 0: 47}"
+      }
+    ]
+  },
+  {
+    "code": "601187.XSHG",
+    "display_name": "厦门银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1337,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1337,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 24,
+        "detail": "missing_periods=['2020q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 23,
+        "detail": "missing_periods=['2020q1', '2020q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 23,
+        "detail": "missing_periods=['2020q1', '2020q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 23,
+        "detail": "missing_periods=['2020q1', '2020q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 4,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 22,
+        "detail": "raw_rows=44, current_only_rows=22, report_type_counts={0: 22, 1: 22}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 22,
+        "detail": "raw_rows=44, current_only_rows=22, report_type_counts={0: 22, 1: 22}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 12,
+        "detail": "raw_rows=24, current_only_rows=12, report_type_counts={0: 12, 1: 12}"
+      }
+    ]
+  },
+  {
+    "code": "601229.XSHG",
+    "display_name": "上海银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2296,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2296,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 40,
+        "detail": "missing_periods=['2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 36,
+        "detail": "raw_rows=72, current_only_rows=36, report_type_counts={1: 36, 0: 36}"
+      }
+    ]
+  },
+  {
+    "code": "601288.XSHG",
+    "display_name": "农业银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "601328.XSHG",
+    "display_name": "交通银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 48,
+        "detail": "raw_rows=96, current_only_rows=48, report_type_counts={1: 48, 0: 48}"
+      }
+    ]
+  },
+  {
+    "code": "601398.XSHG",
+    "display_name": "工商银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "601528.XSHG",
+    "display_name": "瑞丰银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1175,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1175,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 20,
+        "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 20,
+        "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 3,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={1: 20, 0: 20}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={0: 20, 1: 20}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 18,
+        "detail": "raw_rows=36, current_only_rows=18, report_type_counts={0: 18, 1: 18}"
+      }
+    ]
+  },
+  {
+    "code": "601577.XSHG",
+    "display_name": "长沙银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1839,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1839,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 6,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 31,
+        "detail": "raw_rows=62, current_only_rows=31, report_type_counts={1: 31, 0: 31}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 30,
+        "detail": "raw_rows=60, current_only_rows=30, report_type_counts={1: 30, 0: 30}"
+      }
+    ]
+  },
+  {
+    "code": "601658.XSHG",
+    "display_name": "邮储银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1548,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1548,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 28,
+        "detail": "missing_periods=['2019q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 27,
+        "detail": "missing_periods=['2019q1', '2019q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      }
+    ]
+  },
+  {
+    "code": "601665.XSHG",
+    "display_name": "齐鲁银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1180,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1180,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 20,
+        "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 20,
+        "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 3,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={1: 20, 0: 20}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={0: 20, 1: 20}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={0: 20, 1: 20}"
+      }
+    ]
+  },
+  {
+    "code": "601818.XSHG",
+    "display_name": "光大银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 48,
+        "detail": "raw_rows=96, current_only_rows=48, report_type_counts={1: 48, 0: 48}"
+      }
+    ]
+  },
+  {
+    "code": "601825.XSHG",
+    "display_name": "沪农商行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1136,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1136,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 19,
+        "detail": "missing_periods=['2021q1', '2021q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 19,
+        "detail": "missing_periods=['2021q1', '2021q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 3,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 19,
+        "detail": "raw_rows=38, current_only_rows=19, report_type_counts={1: 19, 0: 19}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 19,
+        "detail": "raw_rows=38, current_only_rows=19, report_type_counts={1: 19, 0: 19}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 9,
+        "detail": "raw_rows=18, current_only_rows=9, report_type_counts={0: 9, 1: 9}"
+      }
+    ]
+  },
+  {
+    "code": "601838.XSHG",
+    "display_name": "成都银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1998,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1998,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 33,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 6,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 33,
+        "detail": "raw_rows=66, current_only_rows=33, report_type_counts={1: 33, 0: 33}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 33,
+        "detail": "raw_rows=66, current_only_rows=33, report_type_counts={1: 33, 0: 33}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 23,
+        "detail": "raw_rows=46, current_only_rows=23, report_type_counts={1: 23, 0: 23}"
+      }
+    ]
+  },
+  {
+    "code": "601860.XSHG",
+    "display_name": "紫金银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1775,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1775,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 29,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 29,
+        "detail": "raw_rows=58, current_only_rows=29, report_type_counts={1: 29, 0: 29}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "DATA_NOT_FOUND",
+        "rows": 0,
+        "detail": "No rows returned in window."
+      }
+    ]
+  },
+  {
+    "code": "601916.XSHG",
+    "display_name": "浙商银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1558,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1558,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 28,
+        "detail": "missing_periods=['2019q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 27,
+        "detail": "missing_periods=['2019q1', '2019q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 26,
+        "detail": "missing_periods=['2019q1', '2019q2', '2019q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 5,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 26,
+        "detail": "raw_rows=52, current_only_rows=26, report_type_counts={1: 26, 0: 26}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 21,
+        "detail": "raw_rows=42, current_only_rows=21, report_type_counts={1: 21, 0: 21}"
+      }
+    ]
+  },
+  {
+    "code": "601939.XSHG",
+    "display_name": "建设银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "601963.XSHG",
+    "display_name": "重庆银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 1265,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 1265,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 21,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 3,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 21,
+        "detail": "raw_rows=42, current_only_rows=21, report_type_counts={1: 21, 0: 21}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 21,
+        "detail": "raw_rows=42, current_only_rows=21, report_type_counts={1: 21, 0: 21}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 20,
+        "detail": "raw_rows=40, current_only_rows=20, report_type_counts={1: 20, 0: 20}"
+      }
+    ]
+  },
+  {
+    "code": "601988.XSHG",
+    "display_name": "中国银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      }
+    ]
+  },
+  {
+    "code": "601997.XSHG",
+    "display_name": "贵阳银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2355,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2355,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 41,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 39,
+        "detail": "raw_rows=78, current_only_rows=39, report_type_counts={1: 39, 0: 39}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      }
+    ]
+  },
+  {
+    "code": "601998.XSHG",
+    "display_name": "中信银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2996,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 49,
+        "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 10,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 49,
+        "detail": "raw_rows=98, current_only_rows=49, report_type_counts={1: 49, 0: 49}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 48,
+        "detail": "raw_rows=96, current_only_rows=48, report_type_counts={1: 48, 0: 48}"
+      }
+    ]
+  },
+  {
+    "code": "603323.XSHG",
+    "display_name": "苏农银行",
+    "summary": [
+      {
+        "dataset": "daily_price",
+        "status": "OK",
+        "rows": 2287,
+        "detail": "Saved daily price window."
+      },
+      {
+        "dataset": "daily_valuation",
+        "status": "OK",
+        "rows": 2287,
+        "detail": "Saved daily valuation / market-cap window."
+      },
+      {
+        "dataset": "balance",
+        "status": "OK_WITH_GAPS",
+        "rows": 40,
+        "detail": "missing_periods=['2016q1', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "income",
+        "status": "OK_WITH_GAPS",
+        "rows": 39,
+        "detail": "missing_periods=['2016q1', '2016q2', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "cash_flow",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 38,
+        "detail": "missing_periods=['2016q1', '2016q2', '2016q3', '2026q2', '2026q3', '2026q4']"
+      },
+      {
+        "dataset": "bank_indicator",
+        "status": "OK_WITH_GAPS",
+        "rows": 8,
+        "detail": "missing_years=[2024, 2025, 2026]"
+      },
+      {
+        "dataset": "finance_income_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_cashflow_statement",
+        "status": "OK",
+        "rows": 38,
+        "detail": "raw_rows=76, current_only_rows=38, report_type_counts={1: 38, 0: 38}"
+      },
+      {
+        "dataset": "finance_balance_sheet_parent",
+        "status": "OK",
+        "rows": 28,
+        "detail": "raw_rows=56, current_only_rows=28, report_type_counts={1: 28, 0: 28}"
+      }
+    ]
+  }
+]

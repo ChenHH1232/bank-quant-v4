@@ -1,0 +1,484 @@
+{
+  "created_at": "2026-06-16 21:21:24",
+  "updated_at": "2026-06-16 21:54:58",
+  "status": "completed",
+  "completed_codes": [
+    "000001.XSHE",
+    "001227.XSHE",
+    "002142.XSHE",
+    "002807.XSHE",
+    "002839.XSHE",
+    "002936.XSHE",
+    "002948.XSHE",
+    "002958.XSHE",
+    "002966.XSHE",
+    "600000.XSHG",
+    "600015.XSHG",
+    "600016.XSHG",
+    "600036.XSHG",
+    "600908.XSHG",
+    "600919.XSHG",
+    "600926.XSHG",
+    "600928.XSHG",
+    "601009.XSHG",
+    "601077.XSHG",
+    "601128.XSHG",
+    "601166.XSHG",
+    "601169.XSHG",
+    "601187.XSHG",
+    "601229.XSHG",
+    "601288.XSHG",
+    "601328.XSHG",
+    "601398.XSHG",
+    "601528.XSHG",
+    "601577.XSHG",
+    "601658.XSHG",
+    "601665.XSHG",
+    "601818.XSHG",
+    "601825.XSHG",
+    "601838.XSHG",
+    "601860.XSHG",
+    "601916.XSHG",
+    "601939.XSHG",
+    "601963.XSHG",
+    "601988.XSHG",
+    "601997.XSHG",
+    "601998.XSHG",
+    "603323.XSHG"
+  ],
+  "failed_codes": [],
+  "current_code": null,
+  "events": [
+    {
+      "time": "2026-06-16 21:21:34",
+      "level": "info",
+      "message": "Run started for 2 banks."
+    },
+    {
+      "time": "2026-06-16 21:21:34",
+      "level": "info",
+      "message": "Starting 平安银行 000001.XSHE (1/2)"
+    },
+    {
+      "time": "2026-06-16 21:21:56",
+      "level": "info",
+      "message": "Completed 平安银行 000001.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:21:59",
+      "level": "info",
+      "message": "Starting 兰州银行 001227.XSHE (2/2)"
+    },
+    {
+      "time": "2026-06-16 21:22:07",
+      "level": "info",
+      "message": "Completed 兰州银行 001227.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:23:01",
+      "level": "info",
+      "message": "Run started for 42 banks."
+    },
+    {
+      "time": "2026-06-16 21:23:01",
+      "level": "info",
+      "message": "Starting 宁波银行 002142.XSHE (3/42)"
+    },
+    {
+      "time": "2026-06-16 21:23:22",
+      "level": "info",
+      "message": "Completed 宁波银行 002142.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:23:58",
+      "level": "info",
+      "message": "Starting 江阴银行 002807.XSHE (4/42)"
+    },
+    {
+      "time": "2026-06-16 21:24:15",
+      "level": "info",
+      "message": "Completed 江阴银行 002807.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:24:51",
+      "level": "info",
+      "message": "Starting 张家港行 002839.XSHE (5/42)"
+    },
+    {
+      "time": "2026-06-16 21:25:07",
+      "level": "info",
+      "message": "Completed 张家港行 002839.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:25:43",
+      "level": "info",
+      "message": "Starting 郑州银行 002936.XSHE (6/42)"
+    },
+    {
+      "time": "2026-06-16 21:25:57",
+      "level": "info",
+      "message": "Completed 郑州银行 002936.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:26:33",
+      "level": "info",
+      "message": "Starting 青岛银行 002948.XSHE (7/42)"
+    },
+    {
+      "time": "2026-06-16 21:26:46",
+      "level": "info",
+      "message": "Completed 青岛银行 002948.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:27:22",
+      "level": "info",
+      "message": "Starting 青农商行 002958.XSHE (8/42)"
+    },
+    {
+      "time": "2026-06-16 21:27:39",
+      "level": "info",
+      "message": "Completed 青农商行 002958.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:28:15",
+      "level": "info",
+      "message": "Starting 苏州银行 002966.XSHE (9/42)"
+    },
+    {
+      "time": "2026-06-16 21:28:28",
+      "level": "info",
+      "message": "Completed 苏州银行 002966.XSHE"
+    },
+    {
+      "time": "2026-06-16 21:29:03",
+      "level": "info",
+      "message": "Starting 浦发银行 600000.XSHG (10/42)"
+    },
+    {
+      "time": "2026-06-16 21:29:23",
+      "level": "info",
+      "message": "Completed 浦发银行 600000.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:29:59",
+      "level": "info",
+      "message": "Starting 华夏银行 600015.XSHG (11/42)"
+    },
+    {
+      "time": "2026-06-16 21:30:18",
+      "level": "info",
+      "message": "Completed 华夏银行 600015.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:30:53",
+      "level": "info",
+      "message": "Starting 民生银行 600016.XSHG (12/42)"
+    },
+    {
+      "time": "2026-06-16 21:31:15",
+      "level": "info",
+      "message": "Completed 民生银行 600016.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:31:50",
+      "level": "info",
+      "message": "Starting 招商银行 600036.XSHG (13/42)"
+    },
+    {
+      "time": "2026-06-16 21:32:08",
+      "level": "info",
+      "message": "Completed 招商银行 600036.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:32:43",
+      "level": "info",
+      "message": "Starting 无锡银行 600908.XSHG (14/42)"
+    },
+    {
+      "time": "2026-06-16 21:32:58",
+      "level": "info",
+      "message": "Completed 无锡银行 600908.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:33:34",
+      "level": "info",
+      "message": "Starting 江苏银行 600919.XSHG (15/42)"
+    },
+    {
+      "time": "2026-06-16 21:33:51",
+      "level": "info",
+      "message": "Completed 江苏银行 600919.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:34:27",
+      "level": "info",
+      "message": "Starting 杭州银行 600926.XSHG (16/42)"
+    },
+    {
+      "time": "2026-06-16 21:34:48",
+      "level": "info",
+      "message": "Completed 杭州银行 600926.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:35:04",
+      "level": "info",
+      "message": "Starting 西安银行 600928.XSHG (17/42)"
+    },
+    {
+      "time": "2026-06-16 21:35:21",
+      "level": "info",
+      "message": "Completed 西安银行 600928.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:35:25",
+      "level": "info",
+      "message": "Starting 南京银行 601009.XSHG (18/42)"
+    },
+    {
+      "time": "2026-06-16 21:35:53",
+      "level": "info",
+      "message": "Completed 南京银行 601009.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:35:56",
+      "level": "info",
+      "message": "Starting 渝农商行 601077.XSHG (19/42)"
+    },
+    {
+      "time": "2026-06-16 21:36:13",
+      "level": "info",
+      "message": "Completed 渝农商行 601077.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:36:17",
+      "level": "info",
+      "message": "Starting 常熟银行 601128.XSHG (20/42)"
+    },
+    {
+      "time": "2026-06-16 21:36:39",
+      "level": "info",
+      "message": "Completed 常熟银行 601128.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:36:43",
+      "level": "info",
+      "message": "Starting 兴业银行 601166.XSHG (21/42)"
+    },
+    {
+      "time": "2026-06-16 21:37:10",
+      "level": "info",
+      "message": "Completed 兴业银行 601166.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:37:14",
+      "level": "info",
+      "message": "Starting 北京银行 601169.XSHG (22/42)"
+    },
+    {
+      "time": "2026-06-16 21:37:41",
+      "level": "info",
+      "message": "Completed 北京银行 601169.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:37:44",
+      "level": "info",
+      "message": "Starting 厦门银行 601187.XSHG (23/42)"
+    },
+    {
+      "time": "2026-06-16 21:37:58",
+      "level": "info",
+      "message": "Completed 厦门银行 601187.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:38:02",
+      "level": "info",
+      "message": "Starting 上海银行 601229.XSHG (24/42)"
+    },
+    {
+      "time": "2026-06-16 21:38:24",
+      "level": "info",
+      "message": "Completed 上海银行 601229.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:39:00",
+      "level": "info",
+      "message": "Starting 农业银行 601288.XSHG (25/42)"
+    },
+    {
+      "time": "2026-06-16 21:39:19",
+      "level": "info",
+      "message": "Completed 农业银行 601288.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:39:55",
+      "level": "info",
+      "message": "Starting 交通银行 601328.XSHG (26/42)"
+    },
+    {
+      "time": "2026-06-16 21:40:13",
+      "level": "info",
+      "message": "Completed 交通银行 601328.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:40:49",
+      "level": "info",
+      "message": "Starting 工商银行 601398.XSHG (27/42)"
+    },
+    {
+      "time": "2026-06-16 21:41:19",
+      "level": "info",
+      "message": "Completed 工商银行 601398.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:41:55",
+      "level": "info",
+      "message": "Starting 瑞丰银行 601528.XSHG (28/42)"
+    },
+    {
+      "time": "2026-06-16 21:42:04",
+      "level": "info",
+      "message": "Completed 瑞丰银行 601528.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:42:40",
+      "level": "info",
+      "message": "Starting 长沙银行 601577.XSHG (29/42)"
+    },
+    {
+      "time": "2026-06-16 21:42:57",
+      "level": "info",
+      "message": "Completed 长沙银行 601577.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:43:33",
+      "level": "info",
+      "message": "Starting 邮储银行 601658.XSHG (30/42)"
+    },
+    {
+      "time": "2026-06-16 21:43:46",
+      "level": "info",
+      "message": "Completed 邮储银行 601658.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:44:21",
+      "level": "info",
+      "message": "Starting 齐鲁银行 601665.XSHG (31/42)"
+    },
+    {
+      "time": "2026-06-16 21:44:37",
+      "level": "info",
+      "message": "Completed 齐鲁银行 601665.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:45:13",
+      "level": "info",
+      "message": "Starting 光大银行 601818.XSHG (32/42)"
+    },
+    {
+      "time": "2026-06-16 21:45:43",
+      "level": "info",
+      "message": "Completed 光大银行 601818.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:46:19",
+      "level": "info",
+      "message": "Starting 沪农商行 601825.XSHG (33/42)"
+    },
+    {
+      "time": "2026-06-16 21:46:28",
+      "level": "info",
+      "message": "Completed 沪农商行 601825.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:47:04",
+      "level": "info",
+      "message": "Starting 成都银行 601838.XSHG (34/42)"
+    },
+    {
+      "time": "2026-06-16 21:47:17",
+      "level": "info",
+      "message": "Completed 成都银行 601838.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:47:53",
+      "level": "info",
+      "message": "Starting 紫金银行 601860.XSHG (35/42)"
+    },
+    {
+      "time": "2026-06-16 21:48:06",
+      "level": "info",
+      "message": "Completed 紫金银行 601860.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:48:42",
+      "level": "info",
+      "message": "Starting 浙商银行 601916.XSHG (36/42)"
+    },
+    {
+      "time": "2026-06-16 21:48:59",
+      "level": "info",
+      "message": "Completed 浙商银行 601916.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:49:34",
+      "level": "info",
+      "message": "Starting 建设银行 601939.XSHG (37/42)"
+    },
+    {
+      "time": "2026-06-16 21:50:01",
+      "level": "info",
+      "message": "Completed 建设银行 601939.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:50:37",
+      "level": "info",
+      "message": "Starting 重庆银行 601963.XSHG (38/42)"
+    },
+    {
+      "time": "2026-06-16 21:50:47",
+      "level": "info",
+      "message": "Completed 重庆银行 601963.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:51:23",
+      "level": "info",
+      "message": "Starting 中国银行 601988.XSHG (39/42)"
+    },
+    {
+      "time": "2026-06-16 21:51:40",
+      "level": "info",
+      "message": "Completed 中国银行 601988.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:52:16",
+      "level": "info",
+      "message": "Starting 贵阳银行 601997.XSHG (40/42)"
+    },
+    {
+      "time": "2026-06-16 21:52:38",
+      "level": "info",
+      "message": "Completed 贵阳银行 601997.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:53:13",
+      "level": "info",
+      "message": "Starting 中信银行 601998.XSHG (41/42)"
+    },
+    {
+      "time": "2026-06-16 21:53:31",
+      "level": "info",
+      "message": "Completed 中信银行 601998.XSHG"
+    },
+    {
+      "time": "2026-06-16 21:54:07",
+      "level": "info",
+      "message": "Starting 苏农银行 603323.XSHG (42/42)"
+    },
+    {
+      "time": "2026-06-16 21:54:22",
+      "level": "info",
+      "message": "Completed 苏农银行 603323.XSHG"
+    }
+  ],
+  "run_started_at": "2026-06-16 21:21:24"
+}

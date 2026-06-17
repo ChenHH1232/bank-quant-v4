@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "daily_price",
+    "status": "OK",
+    "rows": 1175,
+    "detail": "Saved daily price window."
+  },
+  {
+    "dataset": "daily_valuation",
+    "status": "OK",
+    "rows": 1175,
+    "detail": "Saved daily valuation / market-cap window."
+  },
+  {
+    "dataset": "balance",
+    "status": "OK_WITH_GAPS",
+    "rows": 21,
+    "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+  },
+  {
+    "dataset": "income",
+    "status": "OK_WITH_GAPS",
+    "rows": 21,
+    "detail": "missing_periods=['2026q2', '2026q3', '2026q4']"
+  },
+  {
+    "dataset": "cash_flow",
+    "status": "OK_WITH_GAPS",
+    "rows": 20,
+    "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+  },
+  {
+    "dataset": "indicator",
+    "status": "OK_WITH_GAPS",
+    "rows": 20,
+    "detail": "missing_periods=['2021q1', '2026q2', '2026q3', '2026q4']"
+  },
+  {
+    "dataset": "bank_indicator",
+    "status": "OK_WITH_GAPS",
+    "rows": 3,
+    "detail": "missing_years=[2024, 2025, 2026]"
+  },
+  {
+    "dataset": "finance_income_statement",
+    "status": "OK",
+    "rows": 20,
+    "detail": "raw_rows=40, current_only_rows=20, report_type_counts={1: 20, 0: 20}"
+  },
+  {
+    "dataset": "finance_cashflow_statement",
+    "status": "OK",
+    "rows": 20,
+    "detail": "raw_rows=40, current_only_rows=20, report_type_counts={0: 20, 1: 20}"
+  },
+  {
+    "dataset": "finance_balance_sheet_parent",
+    "status": "OK",
+    "rows": 18,
+    "detail": "raw_rows=36, current_only_rows=18, report_type_counts={0: 18, 1: 18}"
+  }
+]

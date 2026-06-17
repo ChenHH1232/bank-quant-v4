@@ -1,0 +1,7 @@
+﻿statement_family,standardized_rows,audit_rows,missing_rows
+income,574,574,66
+cash_flow,1517,1517,455
+indicator,1271,1271,245
+balance,2747,2747,1517
+parent_balance,2050,2050,1231
+bank_indicator,583,583,267

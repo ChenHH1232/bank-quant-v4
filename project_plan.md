@@ -28,6 +28,6 @@
 
 ## Time Boundaries
 
-- Raw data window: `2013-05-01` to `2026-05-01`
-- Research window: `2014-05-01` to `2026-05-01`
+- Raw data window: `2014-01-01` to `2026-05-01`
+- Research window: `2014-01-01` to `2026-05-01`
 - Target backtest window: `2021-05-01` to `2026-05-01`

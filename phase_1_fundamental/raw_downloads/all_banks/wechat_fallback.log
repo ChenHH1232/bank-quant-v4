@@ -1,0 +1,407 @@
+[2026-06-16 21:19:01] send_failed
+V4 银行批量下载已启动
+窗口期: 2014-01-01 到 2026-05-01
+银行数量: 1
+查询额度: total=50000000, spare=49932550
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:20:30] send_failed
+V4 银行数据下载进度
+平安银行 000001.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 1/1
+查询额度: total=50000000, spare=49926110
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:21:06] send_failed
+V4 银行窗口期数据下载汇总
+完成时间: 2026-06-16 21:20:33
+已完成银行数: 1 / 1
+失败银行数: 0
+查询额度: total=50000000, spare=49926110
+
+已完成名单:
+- 平安银行 000001.XSHE
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:23:01] send_failed
+V4 银行批量下载已启动
+窗口期: 2014-01-01 到 2026-05-01
+银行数量: 42
+查询额度: total=50000000, spare=49896614
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:23:55] send_failed
+V4 银行数据下载进度
+宁波银行 002142.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 3/42
+查询额度: total=50000000, spare=49890122
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:24:48] send_failed
+V4 银行数据下载进度
+江阴银行 002807.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 4/42
+查询额度: total=50000000, spare=49885056
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:25:40] send_failed
+V4 银行数据下载进度
+张家港行 002839.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 5/42
+查询额度: total=50000000, spare=49880203
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:26:30] send_failed
+V4 银行数据下载进度
+郑州银行 002936.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 6/42
+查询额度: total=50000000, spare=49876197
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:27:19] send_failed
+V4 银行数据下载进度
+青岛银行 002948.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 7/42
+查询额度: total=50000000, spare=49872390
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:28:12] send_failed
+V4 银行数据下载进度
+青农商行 002958.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 8/42
+查询额度: total=50000000, spare=49868651
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:29:00] send_failed
+V4 银行数据下载进度
+苏州银行 002966.XSHE 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 9/42
+查询额度: total=50000000, spare=49865122
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:29:56] send_failed
+V4 银行数据下载进度
+浦发银行 600000.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 10/42
+查询额度: total=50000000, spare=49858630
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:30:50] send_failed
+V4 银行数据下载进度
+华夏银行 600015.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 11/42
+查询额度: total=50000000, spare=49852138
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:31:47] send_failed
+V4 银行数据下载进度
+民生银行 600016.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 12/42
+查询额度: total=50000000, spare=49845646
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:32:40] send_failed
+V4 银行数据下载进度
+招商银行 600036.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 13/42
+查询额度: total=50000000, spare=49839154
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:33:31] send_failed
+V4 银行数据下载进度
+无锡银行 600908.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 14/42
+查询额度: total=50000000, spare=49834098
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:34:24] send_failed
+V4 银行数据下载进度
+江苏银行 600919.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 15/42
+查询额度: total=50000000, spare=49828982
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:38:57] send_failed
+V4 银行数据下载进度
+上海银行 601229.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 24/42
+查询额度: total=50000000, spare=49784458
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:39:52] send_failed
+V4 银行数据下载进度
+农业银行 601288.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 25/42
+查询额度: total=50000000, spare=49777966
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:40:46] send_failed
+V4 银行数据下载进度
+交通银行 601328.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 26/42
+查询额度: total=50000000, spare=49771476
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:41:52] send_failed
+V4 银行数据下载进度
+工商银行 601398.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 27/42
+查询额度: total=50000000, spare=49764984
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:42:37] send_failed
+V4 银行数据下载进度
+瑞丰银行 601528.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 28/42
+查询额度: total=50000000, spare=49762433
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:43:30] send_failed
+V4 银行数据下载进度
+长沙银行 601577.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 29/42
+查询额度: total=50000000, spare=49758433
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:44:18] send_failed
+V4 银行数据下载进度
+邮储银行 601658.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 30/42
+查询额度: total=50000000, spare=49755069
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:45:10] send_failed
+V4 银行数据下载进度
+齐鲁银行 601665.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 31/42
+查询额度: total=50000000, spare=49752504
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:46:16] send_failed
+V4 银行数据下载进度
+光大银行 601818.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 32/42
+查询额度: total=50000000, spare=49746014
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:47:01] send_failed
+V4 银行数据下载进度
+沪农商行 601825.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 33/42
+查询额度: total=50000000, spare=49743565
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:47:50] send_failed
+V4 银行数据下载进度
+成都银行 601838.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 34/42
+查询额度: total=50000000, spare=49739253
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:48:39] send_failed
+V4 银行数据下载进度
+紫金银行 601860.XSHG 已完成
+成功数据集: 9/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: finance_balance_sheet_parent
+当前进度: 35/42
+查询额度: total=50000000, spare=49735466
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:49:31] send_failed
+V4 银行数据下载进度
+浙商银行 601916.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 36/42
+查询额度: total=50000000, spare=49732092
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:50:34] send_failed
+V4 银行数据下载进度
+建设银行 601939.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 37/42
+查询额度: total=50000000, spare=49725600
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:51:20] send_failed
+V4 银行数据下载进度
+重庆银行 601963.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 38/42
+查询额度: total=50000000, spare=49722859
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:52:13] send_failed
+V4 银行数据下载进度
+中国银行 601988.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 39/42
+查询额度: total=50000000, spare=49716367
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:53:10] send_failed
+V4 银行数据下载进度
+贵阳银行 601997.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 40/42
+查询额度: total=50000000, spare=49711257
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:54:04] send_failed
+V4 银行数据下载进度
+中信银行 601998.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 41/42
+查询额度: total=50000000, spare=49704767
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:54:55] send_failed
+V4 银行数据下载进度
+苏农银行 603323.XSHG 已完成
+成功数据集: 10/10
+有缺口: balance, income, cash_flow, indicator, bank_indicator
+缺失: 无
+当前进度: 42/42
+查询额度: total=50000000, spare=49699822
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------
+[2026-06-16 21:55:32] send_failed
+V4 银行窗口期数据下载汇总
+完成时间: 2026-06-16 21:54:58
+已完成银行数: 42 / 42
+失败银行数: 0
+查询额度: total=50000000, spare=49699822
+
+已完成名单:
+- 平安银行 000001.XSHE
+- 兰州银行 001227.XSHE
+- 宁波银行 002142.XSHE
+- 江阴银行 002807.XSHE
+- 张家港行 002839.XSHE
+- 郑州银行 002936.XSHE
+- 青岛银行 002948.XSHE
+- 青农商行 002958.XSHE
+- 苏州银行 002966.XSHE
+- 浦发银行 600000.XSHG
+- 华夏银行 600015.XSHG
+- 民生银行 600016.XSHG
+- 招商银行 600036.XSHG
+- 无锡银行 600908.XSHG
+- 江苏银行 600919.XSHG
+- 杭州银行 600926.XSHG
+- 西安银行 600928.XSHG
+- 南京银行 601009.XSHG
+- 渝农商行 601077.XSHG
+- 常熟银行 601128.XSHG
+- 兴业银行 601166.XSHG
+- 北京银行 601169.XSHG
+- 厦门银行 601187.XSHG
+- 上海银行 601229.XSHG
+- 农业银行 601288.XSHG
+- 交通银行 601328.XSHG
+- 工商银行 601398.XSHG
+- 瑞丰银行 601528.XSHG
+- 长沙银行 601577.XSHG
+- 邮储银行 601658.XSHG
+- 齐鲁银行 601665.XSHG
+- 光大银行 601818.XSHG
+- 沪农商行 601825.XSHG
+- 成都银行 601838.XSHG
+- 紫金银行 601860.XSHG
+- 浙商银行 601916.XSHG
+- 建设银行 601939.XSHG
+- 重庆银行 601963.XSHG
+- 中国银行 601988.XSHG
+- 贵阳银行 601997.XSHG
+- 中信银行 601998.XSHG
+- 苏农银行 603323.XSHG
+error=CalledProcessError(3221226505, ['D:\\hh\\codex\\codex-bridge\\node_modules\\.bin\\tsx.cmd', 'D:\\hh\\codex\\daily\\send_personal_wechat_text.mjs', '--text-file', 'D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\_wechat_message.txt'])
+------------------------------------------------------------

@@ -1,0 +1,75 @@
+statement_family,field_name,tier,reason
+income,operating_revenue,primary,core income flow and low missingness
+income,interest_income,primary,core bank income flow and low missingness
+income,interest_expense,primary,core bank income flow and low missingness
+income,commission_income,primary,core fee income and low missingness
+income,commission_expense,primary,core fee expense and low missingness
+income,investment_income,primary,core profitability component and low missingness
+income,operating_profit,primary,core profitability field and low missingness
+income,total_profit,primary,core profitability field and low missingness
+income,income_tax_expense,primary,core profitability field and low missingness
+income,net_profit,primary,core profitability field and low missingness
+income,np_parent_company_owners,primary,core shareholder profitability field and low missingness
+income,minority_profit,secondary,usable but less complete than the core block
+cash_flow,cash_and_equivalents_at_end,primary,stable cash stock output with low missingness
+cash_flow,cash_equivalent_increase,primary,stable cash-flow summary field with low missingness
+cash_flow,cash_equivalents_at_beginning,primary,stable cash stock input with low missingness
+cash_flow,invest_cash_paid,primary,stable investment cash field with low missingness
+cash_flow,net_invest_cash_flow,primary,stable summary field with low missingness
+cash_flow,net_operate_cash_flow,primary,stable summary field with low missingness
+cash_flow,staff_behalf_paid,primary,stable operating cash field with low missingness
+cash_flow,subtotal_invest_cash_inflow,primary,stable summary field with low missingness
+cash_flow,subtotal_invest_cash_outflow,primary,stable summary field with low missingness
+cash_flow,subtotal_operate_cash_inflow,primary,stable summary field with low missingness
+cash_flow,subtotal_operate_cash_outflow,primary,stable summary field with low missingness
+cash_flow,net_finance_cash_flow,primary,stable summary field with low missingness
+cash_flow,interest_and_commission_cashin,primary,bank-specific core cash inflow field
+cash_flow,invest_withdrawal_cash,primary,usable and low missingness
+cash_flow,subtotal_finance_cash_outflow,primary,usable and low missingness
+cash_flow,fix_intan_other_asset_acqui_cash,primary,usable and low missingness
+cash_flow,net_loan_and_advance_increase,primary,bank-specific operating cash field
+cash_flow,tax_payments,primary,usable and low missingness
+cash_flow,invest_proceeds,primary,usable and low missingness
+cash_flow,exchange_rate_change_effect,primary,usable and low missingness
+indicator,eps,primary,core profitability indicator and low missingness
+indicator,adjusted_profit,primary,core profitability indicator and low missingness
+indicator,operating_profit,primary,core profitability indicator and low missingness
+indicator,value_change_profit,primary,usable indicator and low missingness
+indicator,roe,primary,core profitability ratio and low missingness
+indicator,inc_return,primary,usable return indicator and low missingness
+indicator,roa,primary,core profitability ratio and low missingness
+indicator,net_profit_margin,primary,core margin indicator and low missingness
+indicator,expense_to_total_revenue,primary,usable efficiency indicator and low missingness
+indicator,operation_profit_to_total_revenue,primary,usable efficiency indicator and low missingness
+indicator,net_profit_to_total_revenue,primary,usable efficiency indicator and low missingness
+indicator,ocf_to_revenue,primary,cash conversion indicator and low missingness
+indicator,inc_total_revenue_annual,primary,stable growth indicator
+indicator,inc_revenue_annual,primary,stable growth indicator
+indicator,inc_operation_profit_annual,primary,stable growth indicator
+indicator,inc_net_profit_annual,primary,stable growth indicator
+indicator,inc_net_profit_to_shareholders_annual,primary,stable growth indicator
+balance,cash_equivalents,primary,core balance sheet field and low missingness
+balance,deferred_tax_assets,primary,usable balance sheet field and low missingness
+balance,lend_capital,primary,bank-specific core asset field and low missingness
+balance,paidin_capital,primary,core equity field and low missingness
+balance,retained_profit,primary,core equity field and low missingness
+balance,total_assets,primary,core scale field and low missingness
+balance,total_liability,primary,core leverage field and low missingness
+balance,total_owner_equities,primary,core equity field and low missingness
+balance,capital_reserve_fund,primary,usable equity field and low missingness
+balance,equities_parent_company_owners,primary,usable equity field and low missingness
+balance,ordinary_risk_reserve_fund,primary,bank-specific reserve field and low missingness
+balance,surplus_reserve_fund,primary,usable equity field and low missingness
+balance,taxs_payable,primary,usable liability field and low missingness
+balance,salaries_payable,primary,usable liability field and low missingness
+bank_indicator,Nonperforming_loan_rate,annual_primary,important bank-specific quality field despite annual gap
+bank_indicator,capital_adequacy_ratio,annual_primary,important bank-specific capital field despite annual gap
+bank_indicator,core_level_capital_adequacy_ratio,annual_primary,important bank-specific capital field despite annual gap
+bank_indicator,cost_to_income_ratio,annual_primary,important bank-specific efficiency field despite annual gap
+bank_indicator,deposit_loan_ratio,annual_primary,important bank-specific structure field despite annual gap
+bank_indicator,net_interest_margin,annual_primary,important bank-specific profitability field despite annual gap
+bank_indicator,non_interest_income_ratio,annual_primary,important bank-specific structure field despite annual gap
+bank_indicator,non_performing_loan_provision_coverage,annual_primary,important bank-specific asset-quality field despite annual gap
+bank_indicator,total_deposit,annual_primary,important bank-specific scale field despite annual gap
+bank_indicator,total_loan,annual_primary,important bank-specific scale field despite annual gap
+bank_indicator,weighted_risky_asset,annual_primary,important bank-specific risk field despite annual gap

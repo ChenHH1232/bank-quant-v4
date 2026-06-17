@@ -32,6 +32,9 @@ Current implementation note:
 
 - this rule is not part of the raw fundamental data pull step
 - during the current data-collection phase, we only need to retain the liquidity and market-cap inputs required for this future filter
+- before later applying the top-80% liquidity and top-80% market-cap stock-pool filter on rebalance dates, we first label whether each `stock x quarter` observation is a valid disclosed-data segment
+- this validity layer is currently exported in `quarterly_valid_data_segments.csv`
+- only observations with valid disclosed-data status should be eligible to enter the later rebalance-date stock-pool screen
 
 ## 2. Required Data Groups
 

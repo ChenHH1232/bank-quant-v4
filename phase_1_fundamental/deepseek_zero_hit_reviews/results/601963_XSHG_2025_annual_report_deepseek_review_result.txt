@@ -1,0 +1,37 @@
+1. FILE
+Bank of Chongqing 2025 Annual Report (extracted text)
+
+2. LIKELY_REPORT_LANGUAGE
+Traditional Chinese (mixed script with encoding corruption, e.g., garbled Unicode characters like ݼ, ğ, ۡ).
+
+3. TEXT_QUALITY
+Moderate. The document is readable but contains frequent encoding artifacts that fragment words and symbols, especially in headers, table borders, and punctuation.
+
+4. LIKELY_BANK_INDICATOR_SECTION
+Sections 4.1–4.5 (financial data and indicators: capital adequacy, NPL ratio, provision coverage) and 7.4, 7.9 (credit risk, capital adequacy details).
+
+5. USEFUL_ALTERNATIVE_KEYWORDS
+- 资本充足率
+- 不良贷款率
+- 拨备覆盖率
+- 拨贷比
+- 流动性比例
+- 流动性匹配率
+- 流动性覆盖率
+- 客户集中度
+- 核心一级资本充足率
+- 一级资本充足率
+- 杠杆率
+
+6. WHETHER_OCR_IS_NEEDED
+No. The text extraction is usable; encoding corruption is minor and does not require re-OCR.
+
+7. NEXT_ACTION
+Retry with traditional-Chinese aliases (or simplified Chinese equivalents) and normalize the text (strip encoding artifacts) before searching.
+=== DeepSeek Result ===
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: yes
+Actual tokens: prompt=158255, completion=611, total=158866

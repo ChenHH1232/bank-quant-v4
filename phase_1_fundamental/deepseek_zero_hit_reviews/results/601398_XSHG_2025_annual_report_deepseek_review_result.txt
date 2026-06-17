@@ -1,0 +1,36 @@
+1. FILE  
+This is the ICBC 2025 Annual Report (stock code 1398), extracted from a PDF.  
+
+2. LIKELY_REPORT_LANGUAGE  
+Traditional Chinese (with some garbled/mixed-script characters due to encoding damage or OCR artifacts).  
+
+3. TEXT_QUALITY  
+Partially garbled – many characters are replaced by unintelligible symbols (e.g., ʩ, ɷ, ʮ, ʃ, ϋ, etc.), indicating encoding corruption or poor OCR.  
+
+4. LIKELY_BANK_INDICATOR_SECTION  
+Multiple sections exist (pages 11–12, 21–34, 73–77, 86–89) with ratios like NPL ratio, provision coverage, capital adequacy, etc., but they are encoded in damaged traditional Chinese.  
+
+5. USEFUL_ALTERNATIVE_KEYWORDS  
+- 不良贷款率 (NPL ratio)  
+- 拨备覆盖率 (provision coverage)  
+- 拨贷比 (provision-to-loan ratio)  
+- 资本充足率 (capital adequacy ratio)  
+- 流动性覆盖率 (liquidity coverage ratio)  
+- 流动性匹配率 (liquidity matching ratio)  
+- 客户集中度 (customer concentration)  
+- 核心一级资本 (CET1)  
+- 总资本 (total capital)  
+- 风险加权资产 (risk-weighted assets)  
+
+6. WHETHER_OCR_IS_NEEDED  
+Yes – the garbled characters suggest the original PDF was poorly OCRed. Re-OCR with proper traditional Chinese support is recommended.  
+
+7. NEXT_ACTION  
+OCR the PDF (with a high-quality traditional Chinese engine) and then retry the keyword search.
+=== DeepSeek Result ===
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: yes
+Actual tokens: prompt=160012, completion=460, total=160472

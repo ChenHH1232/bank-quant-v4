@@ -1,0 +1,11 @@
+=== DeepSeek Result ===
+We need to extract specific fields from OCR snippets. The user wants 2024 current-year values for: capital_adequacy_ratio, tier_1_capital_adequacy_ratio, non_performing_loan_ratio, provision_coverage_ratio, provision_to_loan_ratio, liquidity_ratio. From snippets, we see tables and text.
+
+First, identify the exact values. In snippet [�ʱ�������] on page 0018, we see a table with columns: 2024��, 2023��, 2022��. For 2024, under �ʱ������� it says 13.72, under һ���ʱ������� 11.12, under ����һ���ʱ������� 9.36. Also non_performing_loan_ratio is ����������, in the same snippet the 2024 value is 0.83? Actually looking: "��ĩ0��831��641��9413��7211��129��36" - that's 0.83, 1.64, 1.94, 13.72, 11.12, 9.36 for the first six items. But the order: total asset return, net interest margin, net interest spread, capital adequacy ratio, tier 1 capital adequacy ratio, core tier 1. So capital adequacy ratio is 13.72, tier 1 is 11.12, core tier 1 is 9.36. But we need tier_1_capital_adequacy_ratio, which is һ���ʱ�������, value 11.12. non_performing_loan_ratio is ����������, in same table later: "����������" (bad OCR for ����������) and then numbers: 0.83? Actually the snippet shows "���������ʲ��������ʲ�����" and then a series of numbers. In the table, for 2024 ��ĩ, values after �ʱ������� etc: "��ĩ0��831��641��9413��7211��129��360��83335��272��772&0886��4232��5983��98134��81126��13134��633��492��0795��719��35" That is messy. But we have a clearer text later: "��Ҫָ�걣�����á�2024�꣬��˾����������083����Ԯ��������335��27��" (though 083 likely 0.83%). Also in page 0019 table: "����������" for 2024 is 0.90? Wait, there is a table on page 0019: "�ʲ�����ָ�겻�������ʲ��������ʲ�����" and for 2024: "335��272��77" but need to parse correctly. Actually on page 0019, the row for 2024 shows:
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 600
+Retried for empty output: no
+Used reasoning fallback: yes
+Actual tokens: prompt=28374, completion=600, total=28974

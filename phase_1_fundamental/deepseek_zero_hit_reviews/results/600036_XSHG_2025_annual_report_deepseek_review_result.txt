@@ -1,0 +1,9 @@
+=== DeepSeek Result ===
+1. FILE  
+��������2025�����
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: no
+Actual tokens: prompt=178082, completion=320, total=178402

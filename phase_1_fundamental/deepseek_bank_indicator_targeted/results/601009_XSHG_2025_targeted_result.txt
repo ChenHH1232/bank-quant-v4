@@ -1,0 +1,21 @@
+=== DeepSeek Result ===
+We are given multiple snippets with OCR content. The task is to extract current-year (2025) values for four fields: liquidity_ratio, non_performing_loan_ratio, provision_coverage_ratio, and provision_to_loan_ratio. We need to output a table with the specified columns.
+
+We must rely solely on the supplied snippets. The snippets contain a mix of numbers and labels. The snippets appear to have OCR errors (merged rows, odd characters). We need to determine if we can reliably extract the 2025 values.
+
+Let's analyze each snippet for the relevant field.
+
+First, note that the snippets often show a table with years 2025, 2024, 2023 in the context of "��Ҫָ�꣨����". The values appear in a row for each indicator.
+
+From snippet_0001 (for liquidity_ratio, provision_coverage_ratio, provision_to_loan_ratio): The snippet includes a block that seems to list indicators and their values across three years. The line "���������ʲ��������ʲ����ȳɱ����˱ȴ������������Ա�������ʽ������Ϣ������" suggests that after that line, the values for those indicators are given in a matrix format. Then there is a line: "0��831��641��949��360��83335��272��7728��0886��4232��5983��98134��81126��13134��633��492��0795��711��449��350��840��87347��933��0029��2884��4631��4282��14114��94121��41115��033��151��9795��701��419��13��ĩ0��851��732��0413��5311��409��390��90360��583��2330��4782��5030��2480��3095��07116��69"
+
+This is messy. But there are patterns: For "�����Ա���" (liquidity_ratio), we need to find its value for 2025. Similarly for "����������" (provision_coverage_ratio) and "������" (provision_to_loan_ratio).
+
+Also snippet_0004 (for non_performing_loan_ratio) explicitly shows a table with "2024��" and "2023��" and also "�������������". But for 2025? The snippet_
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 500
+Retried for empty output: no
+Used reasoning fallback: yes
+Actual tokens: prompt=2223, completion=500, total=2723

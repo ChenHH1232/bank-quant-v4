@@ -1,0 +1,14 @@
+1. FILE: The file is the 2024 annual report of Bank of Nanjing Co., Ltd. (南京银行股份有限公司).
+2. LIKELY_REPORT_LANGUAGE: Chinese (mixed simplified and traditional, with heavy encoding corruption).
+3. TEXT_QUALITY: Garbled – many characters are corrupted due to encoding/decoding issues (e.g., "ୃ˾ᇁ", "ήѧ", etc.).
+4. LIKELY_BANK_INDICATOR_SECTION: "主要会计数据和财务指标" (Key Accounting Data and Financial Indicators) and "管理层讨论与分析" (Management Discussion and Analysis) contain the relevant bank indicators.
+5. USEFUL_ALTERNATIVE_KEYWORDS: "资本充足率", "不良贷款率", "拨备覆盖率", "拨贷比", "流动性比例", "流动性匹配率", "流动性覆盖率", "客户集中度", "贷款拨备率", "核心一级资本充足率", "一级资本充足率".
+6. WHETHER_OCR_IS_NEEDED: No – the text is extracted but corrupted; OCR would not help because the file already has text content.
+7. NEXT_ACTION: retry with normalization/cleaning (to fix encoding errors before re-searching).
+=== DeepSeek Result ===
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: yes
+Actual tokens: prompt=113292, completion=485, total=113777

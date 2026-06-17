@@ -1,0 +1,14 @@
+1. FILE  
+招商銀行股份有限公司2024年年度报告（A股600036）文本。
+
+2. LIKELY_REPORT_LANGUAGE  
+中文（简体），但字符编码严重损坏，部分字符显示为乱码（如“ඳ”、“č”、“Ď”等），导致大量文字无法正常阅读。
+
+3. TEXT_QUALITY
+=== DeepSeek Result ===
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: no
+Actual tokens: prompt=182251, completion=320, total=182571

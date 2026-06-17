@@ -1,0 +1,163 @@
+{
+  "schema_version": "v1",
+  "source_type": "eastmoney_annual_report_pdf",
+  "standard_fields": [
+    {
+      "field_name_english": "capital_adequacy_ratio",
+      "field_name_chinese": "资本充足率",
+      "aliases": [
+        "资本充足率",
+        "資本充足率",
+        "资本適足率",
+        "資本適足率"
+      ],
+      "value_scope": "Group",
+      "standard_threshold": ">=10.75",
+      "mapping_target": "capital_adequacy_ratio"
+    },
+    {
+      "field_name_english": "tier_1_capital_adequacy_ratio",
+      "field_name_chinese": "一级资本充足率",
+      "aliases": [
+        "一级资本充足率",
+        "一級資本充足率",
+        "一级資本適足率",
+        "一級資本適足率"
+      ],
+      "value_scope": "Group",
+      "standard_threshold": ">=8.75",
+      "mapping_target": "tier_1_capital_adequacy_ratio"
+    },
+    {
+      "field_name_english": "core_tier_1_capital_adequacy_ratio",
+      "field_name_chinese": "核心一级资本充足率",
+      "aliases": [
+        "核心一级资本充足率",
+        "核心一級資本充足率",
+        "核心一级資本適足率",
+        "核心一級資本適足率"
+      ],
+      "value_scope": "Group",
+      "standard_threshold": ">=7.75",
+      "mapping_target": "core_tier_1_capital_adequacy_ratio"
+    },
+    {
+      "field_name_english": "non_performing_loan_ratio",
+      "field_name_chinese": "不良贷款率",
+      "aliases": [
+        "不良贷款率",
+        "不良贷款比率",
+        "不良貸款率",
+        "不良貸款比率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": "<=5",
+      "mapping_target": "non_performing_loan_ratio"
+    },
+    {
+      "field_name_english": "provision_coverage_ratio",
+      "field_name_chinese": "拨备覆盖率",
+      "aliases": [
+        "拨备覆盖率",
+        "撥備覆蓋率",
+        "备抵覆盖率",
+        "備抵覆蓋率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": ">=130",
+      "mapping_target": "provision_coverage_ratio"
+    },
+    {
+      "field_name_english": "provision_to_loan_ratio",
+      "field_name_chinese": "拨贷比",
+      "aliases": [
+        "拨贷比",
+        "撥貸比",
+        "贷款拨备率",
+        "貸款撥備率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": ">=1.8",
+      "mapping_target": "provision_to_loan_ratio"
+    },
+    {
+      "field_name_english": "liquidity_ratio",
+      "field_name_chinese": "流动性比例（本外币）",
+      "aliases": [
+        "流动性比例（本外币）",
+        "流动性比例",
+        "流動性比例",
+        "流動性比率",
+        "流动性比率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": ">=25",
+      "mapping_target": "liquidity_ratio"
+    },
+    {
+      "field_name_english": "liquidity_matching_ratio",
+      "field_name_chinese": "流动性匹配率",
+      "aliases": [
+        "流动性匹配率",
+        "流動性匹配率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": ">=100",
+      "mapping_target": "liquidity_matching_ratio"
+    },
+    {
+      "field_name_english": "liquidity_coverage_ratio",
+      "field_name_chinese": "流动性覆盖率",
+      "aliases": [
+        "流动性覆盖率",
+        "流動性覆蓋率",
+        "流动性覆盖比率",
+        "流動性覆蓋比率"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": ">=100",
+      "mapping_target": "liquidity_coverage_ratio"
+    },
+    {
+      "field_name_english": "single_largest_customer_loan_ratio",
+      "field_name_chinese": "单一最大客户贷款占资本净额比率",
+      "aliases": [
+        "单一最大客户贷款占资本净额比率",
+        "單一最大客戶貸款占資本淨額比率",
+        "单一客户贷款集中度",
+        "單一客戶貸款集中度",
+        "最大单一客户贷款比例",
+        "最大單一客戶貸款比例"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": "<=10",
+      "mapping_target": "single_largest_customer_loan_ratio"
+    },
+    {
+      "field_name_english": "top_ten_customer_loan_ratio",
+      "field_name_chinese": "最大十家客户贷款占资本净额比率",
+      "aliases": [
+        "最大十家客户贷款占资本净额比率",
+        "最大十家客戶貸款占資本淨額比率",
+        "最大十家客户贷款集中度",
+        "最大十家客戶貸款集中度",
+        "最大十家客户贷款比例",
+        "最大十家客戶貸款比例"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": "not_applicable",
+      "mapping_target": "top_ten_customer_loan_ratio"
+    },
+    {
+      "field_name_english": "single_group_credit_concentration_ratio",
+      "field_name_chinese": "单一集团客户授信集中度",
+      "aliases": [
+        "单一集团客户授信集中度",
+        "單一集團客戶授信集中度"
+      ],
+      "value_scope": "Bank",
+      "standard_threshold": "not_applicable",
+      "mapping_target": ""
+    }
+  ]
+}

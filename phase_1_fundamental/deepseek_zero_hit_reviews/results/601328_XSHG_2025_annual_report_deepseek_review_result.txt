@@ -1,0 +1,38 @@
+1. FILE  
+Bank of Communications 2025 annual report (H股 version).
+
+2. LIKELY_REPORT_LANGUAGE  
+Traditional Chinese with heavy encoding corruption; many characters replaced by garbled symbols (e.g., ɓ, ɚ, ɧ, ̃, ʩ, ʞ, etc.).
+
+3. TEXT_QUALITY  
+Very poor – the text is severely corrupted, likely due to incorrect character encoding or extraction from a PDF without proper OCR. Many sections are unreadable.
+
+4. LIKELY_BANK_INDICATOR_SECTION  
+The report contains sections such as 財務摘要 (financial highlights), 管理層討論與分析 (MD&A), 財務報表分析 (financial statement analysis), and 風險管理 (risk management). Bank indicators like capital adequacy (資本充足率), NPL ratio (不良貸款率), provision coverage (撥備覆蓋率), etc., are present but obscured by garbled text.
+
+5. USEFUL_ALTERNATIVE_KEYWORDS  
+- 資本充足率  
+- 不良貸款率  
+- 撥備覆蓋率  
+- 貸款撥備率  
+- 流動性比率  
+- 流動性匹配率  
+- 流動性覆蓋率  
+- 客戶集中度  
+- 淨利差  
+- 淨息差  
+- 核心一級資本充足率  
+- 一級資本充足率  
+
+6. WHETHER_OCR_IS_NEEDED  
+Yes – the text is garbled beyond simple keyword search; proper OCR from the original PDF is needed.
+
+7. NEXT_ACTION  
+OCR the PDF.
+=== DeepSeek Result ===
+
+=== Token Report ===
+Remaining tokens: not returned by DeepSeek API
+Target tokens: 320
+Retried for empty output: yes
+Actual tokens: prompt=148263, completion=496, total=148759

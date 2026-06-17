@@ -1,0 +1,15 @@
+V4高相关簇人工审核包已生成
+
+用途：给你人工判断哪些因子保留、哪些删掉降重
+详细文件：D:\hh\codex\v4\phase_1_fundamental\factor_dedup_review_packet_v1.md
+
+本轮高相关簇：
+Q01: 保留 cash_flow__staff_behalf_paid
+Q02: 保留 cash_flow__invest_withdrawal_cash
+Q03: 保留 indicator__inc_net_profit_annual
+Q04: 保留 indicator__roe
+Q05: 保留 cash_flow__net_operate_cash_flow
+Q06: 保留 income__investment_income
+Q07: 保留 indicator__net_profit_margin
+
+详细报告已写入：D:\hh\codex\v4\phase_1_fundamental\factor_dedup_review_packet_v1.md

@@ -39,3 +39,12 @@ Current modeling panel outputs:
 - [phase1_training_panel.md](/D:/hh/codex/v4/phase_1_fundamental/phase1_training_panel.md)
 - [phase1_tradable_rebalance_samples.csv](/D:/hh/codex/v4/phase_1_fundamental/phase1_tradable_rebalance_samples.csv)
 - [phase1_tradable_rebalance_samples.md](/D:/hh/codex/v4/phase_1_fundamental/phase1_tradable_rebalance_samples.md)
+
+Single-factor test protocol:
+
+- [single_factor_test_protocol_v1.md](/D:/hh/codex/v4/phase_1_fundamental/single_factor_test_protocol_v1.md)
+- [build_single_factor_manifest.py](/D:/hh/codex/v4/phase_1_fundamental/build_single_factor_manifest.py)
+- [build_single_factor_test_results.py](/D:/hh/codex/v4/phase_1_fundamental/build_single_factor_test_results.py)
+- [build_factor_collinearity_check_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_factor_collinearity_check_v1.py)
+- [build_factor_dedup_clusters_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_factor_dedup_clusters_v1.py)
+- [build_factor_dedup_review_packet_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_factor_dedup_review_packet_v1.py)

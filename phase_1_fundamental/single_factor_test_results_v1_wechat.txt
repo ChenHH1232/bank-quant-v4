@@ -1,0 +1,24 @@
+V4单因子首轮检测已完成
+
+窗口：2014-05-01到2019-05-01训练，2019-05-01到2021-05-01验证
+总因子数：74
+A通过：42
+B观察：5
+C淘汰：27
+D暂缓：0
+
+A档前五：
+cash_flow__subtotal_operate_cash_inflow | 验证IC 0.12737 | 验证顶底差 -5e-07
+indicator__roe | 验证IC 0.124165 | 验证顶底差 0.00042852
+income__minority_profit | 验证IC 0.113868 | 验证顶底差 0.00050207
+indicator__inc_return | 验证IC 0.111121 | 验证顶底差 0.00042852
+cash_flow__subtotal_operate_cash_outflow | 验证IC 0.102315 | 验证顶底差 0.00045649
+
+B档前五：
+bank_indicator__total_deposit | 验证IC 0.272624 | 验证顶底差 0.00010158
+indicator__net_profit_margin | 验证IC 0.179843 | 验证顶底差 0.0003966
+indicator__net_profit_to_total_revenue | 验证IC 0.179843 | 验证顶底差 0.0003966
+cash_flow__subtotal_finance_cash_outflow | 验证IC 0.040043 | 验证顶底差 4.73e-05
+cash_flow__interest_and_commission_cashin | 验证IC 0.012403 | 验证顶底差 -9.047e-05
+
+结果文件：D:\hh\codex\v4\phase_1_fundamental\single_factor_test_results_v1.csv

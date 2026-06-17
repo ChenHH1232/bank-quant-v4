@@ -25,6 +25,8 @@ This freeze records the current usable Phase 1 bank-fundamental dataset before l
 - That future rebalance stock pool should only be built from rows where:
   - `effective_data_flag = 1`
   - and the future rebalance liquidity/size screen also passes
+- the future rebalance stock pool must be recomputed independently at every quarterly rebalance date
+- we do not allow a one-time fixed stock pool to be reused across all later rebalances
 
 ## Remaining Research Gaps
 

@@ -44,6 +44,13 @@ That later rule is still:
   - keep the top 80% by market cap
   - use the intersection as the stock pool
 
+Very important:
+
+- this stock pool must be recomputed independently on every rebalance date
+- the pool is not allowed to be frozen once and reused for later quarters
+- a stock can enter, leave, and re-enter the pool over time
+- liquidity ranking and market-cap ranking must always be based on information available on that specific rebalance date only
+
 So the current file answers:
 
 - "Do we have enough disclosed fundamental data to use this bank-quarter at all?"
@@ -67,3 +74,17 @@ When we add daily market data and rebalance calendars, each rebalance observatio
    - whether the stock is still inside the top-80% liquidity and top-80% market-cap intersection on that date
 
 Only rows where both flags equal `1` should enter the rebalance-date candidate universe.
+
+## Dynamic Rebalance Principle
+
+For the future quarterly strategy layer, we should treat each rebalance date as a fresh cross-section:
+
+1. determine the bank universe visible on that rebalance date
+2. keep only stocks whose disclosed-data segment is effective on that rebalance date
+3. compute rolling liquidity using only the pre-rebalance lookback window
+4. compute market-cap ranking using the rebalance date snapshot
+5. select the top 80% by liquidity
+6. select the top 80% by market cap
+7. use the intersection as the final rebalance-date stock pool
+
+This means the stock pool is intentionally time-varying.

@@ -6,6 +6,10 @@ Goal:
 - Run standalone statistical tests on fundamental factors first
 - Do not mix momentum or mean-reversion features into this phase
 
+Project time protocol:
+
+- [TIME_PROTOCOL.md](/D:/hh/codex/v4/TIME_PROTOCOL.md)
+
 Workflow:
 
 1. Define required fields and source mapping

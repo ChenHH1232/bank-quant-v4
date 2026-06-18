@@ -9,12 +9,12 @@ Rule:
 - Banks covered: `42`
 - Banks with at least one valid quarter: `41`
 - Quarter rows: `1539`
-- Valid quarter rows: `1286`
-- Invalid quarter rows: `253`
+- Valid quarter rows: `1328`
+- Invalid quarter rows: `211`
 
 Invalid reason counts:
 - `missing_quarterly_families:parent_balance`: `194`
-- `no_prior_annual_bank_indicator`: `59`
+- `no_prior_annual_bank_indicator`: `17`
 
 Output:
 - [quarterly_valid_data_segments.csv](D:\hh\codex\v4\phase_1_fundamental\quarterly_valid_data_segments.csv)

@@ -33,10 +33,14 @@ def build_global_rebalance_calendar(path: Path) -> list[dict[str, str]]:
             if row["effective_data_flag"] != "1":
                 continue
             quarter_key = (row.get("quarter_key") or "").strip()
-            ref_date = parse_date(row.get("rebalance_reference_date", ""))
-            if not quarter_key or ref_date is None:
+            effective_from_date = parse_date(row.get("effective_from_date", ""))
+            if not quarter_key or effective_from_date is None:
                 continue
-            by_quarter[quarter_key].append(ref_date)
+            # The global rebalance date must be a date when every included stock
+            # is already inside its valid-data window. Using the raw reference
+            # date would exclude the latest reporter because its effective window
+            # starts on the next day.
+            by_quarter[quarter_key].append(effective_from_date)
 
     rows: list[dict[str, str]] = []
     for quarter_key in sorted(by_quarter):
@@ -105,10 +109,15 @@ def build_snapshot_row(
     price_df: pd.DataFrame,
 ) -> dict[str, str] | None:
     valuation_match = valuation_df[valuation_df["day"] == rebalance_date]
+    actual_rebalance_date = rebalance_date
     if valuation_match.empty:
-        return None
+        future_matches = valuation_df[valuation_df["day"] >= rebalance_date].sort_values("day")
+        if future_matches.empty:
+            return None
+        valuation_match = future_matches.head(1)
+        actual_rebalance_date = valuation_match.iloc[-1]["day"]
 
-    price_window = price_df[price_df["day"] < rebalance_date].sort_values("day").tail(LIQUIDITY_LOOKBACK_DAYS)
+    price_window = price_df[price_df["day"] < actual_rebalance_date].sort_values("day").tail(LIQUIDITY_LOOKBACK_DAYS)
     if price_window.empty:
         return None
 
@@ -117,7 +126,7 @@ def build_snapshot_row(
     avg_traded_volume = float(price_window["volume"].mean()) if "volume" in price_window.columns else 0.0
 
     return {
-        "rebalance_date": rebalance_date.isoformat(),
+        "rebalance_date": actual_rebalance_date.isoformat(),
         "quarter_key": quarter_key,
         "code": code,
         "avg_traded_amount_lookback": f"{avg_traded_amount:.6f}",

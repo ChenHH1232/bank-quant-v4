@@ -12,5 +12,5 @@ Files:
 - input template: [daily_market_rebalance_input.csv](D:\hh\codex\v4\phase_1_fundamental\daily_market_rebalance_input.csv)
 - output template: [dynamic_rebalance_stock_pool.csv](D:\hh\codex\v4\phase_1_fundamental\dynamic_rebalance_stock_pool.csv)
 
-- Rebalance dates currently populated from input: `25`
-- Output rows currently generated: `525`
+- Rebalance dates currently populated from input: `38`
+- Output rows currently generated: `998`

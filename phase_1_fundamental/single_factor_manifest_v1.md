@@ -9,12 +9,13 @@ Window:
 - training: `2014-05-01` to `2019-05-01`
 - validation: `2019-05-01` to `2021-05-01`
 
-- Total candidate factors: `74`
+- Total candidate factors: `77`
 
 Family counts:
 - `balance`: `14`
 - `bank_indicator`: `11`
 - `cash_flow`: `20`
+- `derived`: `3`
 - `income`: `12`
 - `indicator`: `17`
 

@@ -13,21 +13,24 @@ Y definition:
 - `y_year_avg_daily_return_close`: mean daily close-to-close return from after current rebalance date to the rebalance date four quarters later
 - annual bank indicators are still aligned from the latest published annual snapshot available on the rebalance date
 
-- Rows: `525`
-- Rebalance dates: `25`
-- In-pool rows: `390`
-- Quarter-y ready rows: `486`
-- Year-y ready rows: `429`
+- Rows: `998`
+- Rebalance dates: `38`
+- In-pool rows: `726`
+- Quarter-y ready rows: `958`
+- Year-y ready rows: `856`
 
 Largest remaining field-missing counts:
-- `income__minority_profit`: `23`
-- `cash_flow__invest_withdrawal_cash`: `12`
-- `cash_flow__net_loan_and_advance_increase`: `9`
-- `cash_flow__invest_proceeds`: `8`
-- `cash_flow__tax_payments`: `7`
-- `cash_flow__exchange_rate_change_effect`: `4`
+- `income__minority_profit`: `35`
+- `cash_flow__invest_withdrawal_cash`: `21`
+- `cash_flow__exchange_rate_change_effect`: `15`
+- `cash_flow__net_loan_and_advance_increase`: `15`
+- `cash_flow__invest_proceeds`: `14`
+- `cash_flow__tax_payments`: `13`
+- `indicator__expense_to_total_revenue`: `12`
 - `cash_flow__fix_intan_other_asset_acqui_cash`: `3`
 - `cash_flow__interest_and_commission_cashin`: `2`
+- `cash_flow__net_finance_cash_flow`: `2`
+- `cash_flow__subtotal_finance_cash_outflow`: `2`
 
 Output:
 - [phase1_training_panel.csv](D:\hh\codex\v4\phase_1_fundamental\phase1_training_panel.csv)

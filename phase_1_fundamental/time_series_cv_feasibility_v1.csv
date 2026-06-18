@@ -1,0 +1,2 @@
+﻿earliest_rebalance_date,latest_rebalance_date,rebalance_date_count,required_window_years,required_window_end_if_start_at_earliest,research_end_limit,full_5y_train_2y_test_cv_feasible,note
+2014-05-05,2020-11-02,23,7,2021-05-05,2021-05-01,0,not feasible because usable pre-2021 rebalance dates span less than 7 full years

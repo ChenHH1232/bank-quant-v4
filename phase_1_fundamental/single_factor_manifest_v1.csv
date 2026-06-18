@@ -73,3 +73,6 @@ bank_indicator__non_performing_loan_provision_coverage,bank_indicator,y_year_avg
 bank_indicator__total_deposit,bank_indicator,y_year_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending
 bank_indicator__total_loan,bank_indicator,y_year_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending
 bank_indicator__weighted_risky_asset,bank_indicator,y_year_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending
+derived__log_total_assets,derived,y_quarter_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending
+derived__staff_cash_to_operating_revenue,derived,y_quarter_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending
+derived__investment_income_to_operating_revenue,derived,y_quarter_avg_daily_return_close,2014-05-01,2019-05-01,2019-05-01,2021-05-01,rebalance_stock_pool_flag=1,5,3,pending

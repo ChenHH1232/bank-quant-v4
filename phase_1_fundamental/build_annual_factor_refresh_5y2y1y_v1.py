@@ -19,6 +19,7 @@ from build_pre2021_rolling_validation_v1 import (
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 FACTOR_POOL_PATH = SCRIPT_DIR / "final_core_factor_pool_v3.csv"
+CONTROLLED_IMPROVEMENT_POOL_PATH = SCRIPT_DIR / "controlled_improvement_pool_v1.csv"
 
 OUTPUT_FOLDS_PATH = SCRIPT_DIR / "annual_factor_refresh_5y2y1y_v1_folds.csv"
 OUTPUT_SELECTION_PATH = SCRIPT_DIR / "annual_factor_refresh_5y2y1y_v1_factor_selection.csv"
@@ -55,12 +56,14 @@ def load_factor_universe() -> tuple[list[dict[str, str]], list[dict[str, str]], 
     improvement_results = {row["factor_name"]: row for row in load_rows(SCRIPT_DIR / "improvement_factor_test_results_v1.csv")}
 
     universe_rows: list[dict[str, str]] = []
+    seen_factors: set[str] = set()
     for row in load_rows(FACTOR_POOL_PATH):
         if row["v3_status"] not in KEEPABLE_V3_STATUSES:
             continue
         factor_name = row["factor_name"]
         if factor_name in by_factor:
             universe_rows.append(by_factor[factor_name])
+            seen_factors.add(factor_name)
             continue
 
         factor_result = core_results.get(factor_name) or improvement_results.get(factor_name)
@@ -75,6 +78,25 @@ def load_factor_universe() -> tuple[list[dict[str, str]], list[dict[str, str]], 
                 "target_label": factor_result["target_label"],
             }
         )
+        seen_factors.add(factor_name)
+
+    for row in load_rows(CONTROLLED_IMPROVEMENT_POOL_PATH):
+        factor_name = row["factor_name"]
+        if factor_name in seen_factors:
+            continue
+        factor_result = improvement_results.get(factor_name)
+        if factor_result is None:
+            raise KeyError(f"Missing controlled improvement result for {factor_name}")
+        metadata_row = {
+            "factor_name": factor_name,
+            "factor_family": row["factor_family"],
+            "layer": "improvement_layer",
+            "direction": factor_result["direction"],
+            "target_label": factor_result["target_label"],
+        }
+        universe_rows.append(metadata_row)
+        enhanced_rows.append(metadata_row)
+        seen_factors.add(factor_name)
 
     return base_rows, enhanced_rows, universe_rows
 

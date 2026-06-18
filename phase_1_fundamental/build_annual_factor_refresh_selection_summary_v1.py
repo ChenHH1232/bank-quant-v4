@@ -8,6 +8,7 @@ import pandas as pd
 SCRIPT_DIR = Path(__file__).resolve().parent
 SELECTION_PATH = SCRIPT_DIR / "annual_factor_refresh_5y2y1y_v1_factor_selection.csv"
 POOL_PATH = SCRIPT_DIR / "final_core_factor_pool_v3.csv"
+CONTROLLED_IMPROVEMENT_POOL_PATH = SCRIPT_DIR / "controlled_improvement_pool_v1.csv"
 OUTPUT_PATH = SCRIPT_DIR / "annual_factor_refresh_selection_summary_v1.md"
 
 
@@ -17,7 +18,13 @@ def load_rows(path: Path) -> list[dict[str, str]]:
 
 
 def build_layer_map() -> dict[str, str]:
-    return {row["factor_name"]: row["layer"] for row in load_rows(POOL_PATH)}
+    layer_map = {row["factor_name"]: row["layer"] for row in load_rows(POOL_PATH)}
+    if CONTROLLED_IMPROVEMENT_POOL_PATH.exists():
+        for row in load_rows(CONTROLLED_IMPROVEMENT_POOL_PATH):
+            factor_name = row["factor_name"]
+            if factor_name not in layer_map:
+                layer_map[factor_name] = row.get("layer", "improvement_layer") or "improvement_layer"
+    return layer_map
 
 
 def format_factor_list(names: list[str], layer_map: dict[str, str]) -> list[str]:

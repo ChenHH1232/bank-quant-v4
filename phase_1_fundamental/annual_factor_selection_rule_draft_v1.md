@@ -23,6 +23,8 @@ Important freeze rules:
 - if a factor does not pass the annual thresholds, do not backfill it just to reach `7` or `2`
 - improvement layer can be `0`, `1`, or `2` factors in a given year
 - annual factor selection must only use information available before that year's realized May rebalance date
+- formal execution must distinguish `execution layer` from `research watch layer`
+- factors that remain in `watch_layer` can be tracked in annual research summaries without entering the formal `base_core_7` or `base_plus_top2_9` portfolio shells
 
 ## 1. Core Resident Layer
 
@@ -40,19 +42,18 @@ Reason:
 
 ### B. High-stability resident base layer
 
-- `bank_indicator__core_level_capital_adequacy_ratio`
 - `bank_indicator__deposit_loan_ratio`
 - `derived__log_total_assets`
 
 Reason:
 
-- each kept in `4/5` annual folds
+- each kept in `4/5` annual folds within the executable base set
 - they form the most stable second-tier base around the hard anchor
 - they should enter the default annual candidate shortlist before lower-frequency base factors
 
 Operational rule:
 
-- these three factors are not forced into the yearly set
+- these two factors are not forced into the yearly set
 - but when they pass the annual threshold screen, they should have resident priority over lower-frequency rotation factors
 
 ### C. Medium-stability base support
@@ -68,6 +69,21 @@ Operational rule:
 
 - treat this as the first backup base factor after the resident set
 - when annual thresholds are passed, it should usually be included before the lower-frequency rotation group
+
+### D. Research watch layer
+
+- `bank_indicator__core_level_capital_adequacy_ratio`
+
+Reason:
+
+- it was kept in `4/5` annual folds in the broader research selection table
+- but it remains `watch_layer` in the current factor-pool design
+- this means it is useful as a monitoring name, not yet as a formal execution resident
+
+Operational rule:
+
+- keep tracking it in annual selection diagnostics
+- do not include it in the formal base portfolio shell unless a future pool revision upgrades it from `watch_layer` to executable `base_core`
 
 ## 2. Annual Rotation Layer
 
@@ -185,9 +201,10 @@ Use the following decision order each year:
 The current annual rule draft is:
 
 - one hard resident anchor: `bank_indicator__capital_adequacy_ratio`
-- one resident base cluster: `core_level_capital_adequacy_ratio`, `deposit_loan_ratio`, `log_total_assets`
+- one executable resident base cluster: `deposit_loan_ratio`, `log_total_assets`
 - one medium-stability support factor: `non_performing_loan_provision_coverage`
 - one annual rotation sleeve for lower-frequency base factors
+- one research watch name still tracked outside the execution shell: `core_level_capital_adequacy_ratio`
 - one controlled yearly improvement sleeve with max `2` factors and no forced fill requirement
 
 This is stable enough to freeze for the next formal backtest round without pretending the factor set is fully static across years.

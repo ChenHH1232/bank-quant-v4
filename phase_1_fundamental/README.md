@@ -57,3 +57,5 @@ Single-factor test protocol:
 - [build_single_factor_test_results_core_v2.py](/D:/hh/codex/v4/phase_1_fundamental/build_single_factor_test_results_core_v2.py)
 - [final_core_factor_pool_v2_trimmed.csv](/D:/hh/codex/v4/phase_1_fundamental/final_core_factor_pool_v2_trimmed.csv)
 - [final_core_factor_pool_v2_trimmed.md](/D:/hh/codex/v4/phase_1_fundamental/final_core_factor_pool_v2_trimmed.md)
+- [build_multifactor_combo_core_v2.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_combo_core_v2.py)
+- [build_multifactor_combo_backtest_core_v2.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_combo_backtest_core_v2.py)

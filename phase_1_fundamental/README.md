@@ -95,6 +95,7 @@ Improvement-factor layer:
 - [annual_factor_refresh_5y2y1y_v1.md](/D:/hh/codex/v4/phase_1_fundamental/annual_factor_refresh_5y2y1y_v1.md)
 - [build_annual_factor_refresh_selection_summary_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_annual_factor_refresh_selection_summary_v1.py)
 - [annual_factor_refresh_selection_summary_v1.md](/D:/hh/codex/v4/phase_1_fundamental/annual_factor_refresh_selection_summary_v1.md)
+- [annual_factor_selection_rule_draft_v1.md](/D:/hh/codex/v4/phase_1_fundamental/annual_factor_selection_rule_draft_v1.md)
 - [build_annual_review_backtest_detail_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_annual_review_backtest_detail_v1.py)
 - [annual_review_backtest_detail_v1_groups.csv](/D:/hh/codex/v4/phase_1_fundamental/annual_review_backtest_detail_v1_groups.csv)
 - [annual_review_backtest_detail_v1.md](/D:/hh/codex/v4/phase_1_fundamental/annual_review_backtest_detail_v1.md)

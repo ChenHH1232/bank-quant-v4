@@ -6,6 +6,9 @@ Protocol:
 - test window: next `2` realized May-anchor cycles
 - review window: next `1` realized May-anchor cycle
 - factor selection is refreshed once per year, then frozen for the whole review year
+- keep rule: train_ic>`0.0`, test_ic>`0.0`, test_positive_ic_ratio>=`0.5`
+- structure rule: keep only if test_top_minus_bottom>=`0.0` or test_ic>=`0.05`
+- layer caps: base_core min/max=`4/7`, improvement max=`2`, watch max=`2`
 
 - controlled factor universe size: `15`
 - fold count: `5`
@@ -18,21 +21,21 @@ Fold definitions:
 - `annual_05` | train=`2018-05-02` to `2023-05-03` | test=`2023-05-04` to `2025-05-05` | review=`2025-05-06` to `2026-05-05`
 
 Annual factor selection counts:
-- `annual_01` | kept=`11` / total=`15`
-- `annual_02` | kept=`12` / total=`15`
+- `annual_01` | kept=`10` / total=`15`
+- `annual_02` | kept=`9` / total=`15`
 - `annual_03` | kept=`4` / total=`15`
 - `annual_04` | kept=`4` / total=`15`
 - `annual_05` | kept=`6` / total=`15`
 
 Average review-year results by scenario and combo:
-- `base_core_7` best combo: `combo__ic_weight_train` | mean_review_ic=`0.098478` | mean_review_spread=`0.00034416` | mean_selected_count=`4.6`
-- `base_core_7` `combo__ic_weight_train` | folds=`5` | mean_review_ic=`0.098478` | mean_review_spread=`0.00034416` | mean_review_pos_ic_ratio=`0.683333` | mean_selected_count=`4.6`
-- `base_core_7` `combo__equal_weight` | folds=`5` | mean_review_ic=`0.077927` | mean_review_spread=`0.00028152` | mean_review_pos_ic_ratio=`0.633333` | mean_selected_count=`4.6`
-- `base_core_7` `combo__quarterly_plus_annual` | folds=`5` | mean_review_ic=`0.025888` | mean_review_spread=`0.00015538` | mean_review_pos_ic_ratio=`0.55` | mean_selected_count=`4.6`
-- `base_plus_top2_9` best combo: `combo__ic_weight_train` | mean_review_ic=`0.109494` | mean_review_spread=`0.00037846` | mean_selected_count=`5.6`
-- `base_plus_top2_9` `combo__ic_weight_train` | folds=`5` | mean_review_ic=`0.109494` | mean_review_spread=`0.00037846` | mean_review_pos_ic_ratio=`0.683333` | mean_selected_count=`5.6`
-- `base_plus_top2_9` `combo__equal_weight` | folds=`5` | mean_review_ic=`0.062122` | mean_review_spread=`0.00018162` | mean_review_pos_ic_ratio=`0.633333` | mean_selected_count=`5.6`
-- `base_plus_top2_9` `combo__quarterly_plus_annual` | folds=`5` | mean_review_ic=`0.002545` | mean_review_spread=`0.00012966` | mean_review_pos_ic_ratio=`0.45` | mean_selected_count=`5.6`
+- `base_core_7` best combo: `combo__ic_weight_train` | mean_review_ic=`0.095899` | mean_review_spread=`0.0003133` | mean_selected_count=`4.4`
+- `base_core_7` `combo__ic_weight_train` | folds=`5` | mean_review_ic=`0.095899` | mean_review_spread=`0.0003133` | mean_review_pos_ic_ratio=`0.683333` | mean_selected_count=`4.4`
+- `base_core_7` `combo__equal_weight` | folds=`5` | mean_review_ic=`0.080306` | mean_review_spread=`0.00028482` | mean_review_pos_ic_ratio=`0.633333` | mean_selected_count=`4.4`
+- `base_core_7` `combo__quarterly_plus_annual` | folds=`5` | mean_review_ic=`0.00121` | mean_review_spread=`0.00010659` | mean_review_pos_ic_ratio=`0.5` | mean_selected_count=`4.4`
+- `base_plus_top2_9` best combo: `combo__ic_weight_train` | mean_review_ic=`0.098476` | mean_review_spread=`0.0003461` | mean_selected_count=`5.4`
+- `base_plus_top2_9` `combo__ic_weight_train` | folds=`5` | mean_review_ic=`0.098476` | mean_review_spread=`0.0003461` | mean_review_pos_ic_ratio=`0.683333` | mean_selected_count=`5.4`
+- `base_plus_top2_9` `combo__equal_weight` | folds=`5` | mean_review_ic=`0.056371` | mean_review_spread=`0.00021006` | mean_review_pos_ic_ratio=`0.583333` | mean_selected_count=`5.4`
+- `base_plus_top2_9` `combo__quarterly_plus_annual` | folds=`5` | mean_review_ic=`-0.010799` | mean_review_spread=`6.015e-05` | mean_review_pos_ic_ratio=`0.4` | mean_selected_count=`5.4`
 
 Outputs:
 - [annual_factor_refresh_5y2y1y_v1_folds.csv](D:\hh\codex\v4\phase_1_fundamental\annual_factor_refresh_5y2y1y_v1_folds.csv)

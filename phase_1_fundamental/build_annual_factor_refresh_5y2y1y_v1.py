@@ -31,6 +31,15 @@ REVIEW_YEAR_COUNT = 1
 MIN_TRAIN_REBALANCE_DATES = 15
 MIN_TEST_REBALANCE_DATES = 6
 MIN_REVIEW_REBALANCE_DATES = 3
+MIN_TRAIN_RANK_IC_MEAN = 0.0
+MIN_TEST_RANK_IC_MEAN = 0.0
+MIN_TEST_POSITIVE_IC_RATIO = 0.5
+MIN_TEST_TOP_MINUS_BOTTOM = 0.0
+MIN_TEST_RANK_IC_FOR_WEAK_SPREAD = 0.05
+MIN_BASE_CORE_KEEP = 4
+MAX_BASE_CORE_KEEP = 7
+MAX_IMPROVEMENT_KEEP = 2
+MAX_WATCH_KEEP = 2
 
 KEEPABLE_V3_STATUSES = {"keep_final", "keep_enhancement", "watch_keep", "downgrade_watch"}
 
@@ -108,11 +117,25 @@ def evaluate_factor_window(panel_df: pd.DataFrame, factor_row: dict[str, str], t
 
     train_ic = train_metrics["rank_ic_mean"]
     test_ic = test_metrics["rank_ic_mean"]
+    test_positive_ic_ratio = test_metrics["positive_ic_ratio"]
+    test_top_minus_bottom = test_metrics["top_minus_bottom"]
+
+    train_pass = train_ic != "" and float(train_ic) > MIN_TRAIN_RANK_IC_MEAN
+    test_ic_pass = test_ic != "" and float(test_ic) > MIN_TEST_RANK_IC_MEAN
+    test_positive_pass = (
+        test_positive_ic_ratio != "" and float(test_positive_ic_ratio) >= MIN_TEST_POSITIVE_IC_RATIO
+    )
+    test_spread_pass = (
+        test_top_minus_bottom != "" and float(test_top_minus_bottom) >= MIN_TEST_TOP_MINUS_BOTTOM
+    )
+    test_weak_spread_override = (
+        test_ic != "" and float(test_ic) >= MIN_TEST_RANK_IC_FOR_WEAK_SPREAD
+    )
     keep_flag = int(
-        train_ic != ""
-        and test_ic != ""
-        and float(train_ic) > 0
-        and float(test_ic) > 0
+        train_pass
+        and test_ic_pass
+        and test_positive_pass
+        and (test_spread_pass or test_weak_spread_override)
     )
     return {
         "factor_name": factor_name,
@@ -127,7 +150,66 @@ def evaluate_factor_window(panel_df: pd.DataFrame, factor_row: dict[str, str], t
         "train_top_minus_bottom": train_metrics["top_minus_bottom"],
         "test_top_minus_bottom": test_metrics["top_minus_bottom"],
         "keep_flag": keep_flag,
+        "keep_reason": (
+            "pass_train_ic_and_test_ic_positive_ratio_and_structure"
+            if keep_flag == 1
+            else "fail_threshold_rule"
+        ),
+        "priority_score": (
+            round(
+                (float(test_ic) if test_ic != "" else -999.0) * 1000
+                + (float(test_positive_ic_ratio) if test_positive_ic_ratio != "" else -999.0) * 10
+                + (float(test_top_minus_bottom) if test_top_minus_bottom != "" else -999.0),
+                6,
+            )
+        ),
     }
+
+
+def apply_layer_caps(selection_rows: list[dict[str, object]], universe_rows: list[dict[str, str]]) -> tuple[list[dict[str, str]], list[dict[str, object]]]:
+    metadata_map = {row["factor_name"]: row for row in universe_rows}
+    passed_rows = [row.copy() for row in selection_rows if int(row["keep_flag"]) == 1]
+
+    def sort_key(row: dict[str, object]) -> tuple[float, float, float, str]:
+        test_ic = float(row["test_rank_ic_mean"]) if row["test_rank_ic_mean"] != "" else -999.0
+        test_spread = float(row["test_top_minus_bottom"]) if row["test_top_minus_bottom"] != "" else -999.0
+        test_pos = float(row["test_positive_ic_ratio"]) if row["test_positive_ic_ratio"] != "" else -999.0
+        return (test_ic, test_pos, test_spread, str(row["factor_name"]))
+
+    base_candidates = sorted([row for row in passed_rows if row["layer"] == "base_core"], key=sort_key, reverse=True)
+    improvement_candidates = sorted([row for row in passed_rows if row["layer"] == "improvement_layer"], key=sort_key, reverse=True)
+    watch_candidates = sorted([row for row in passed_rows if row["layer"] == "watch_layer"], key=sort_key, reverse=True)
+
+    selected_names: set[str] = set()
+
+    for row in base_candidates[:MAX_BASE_CORE_KEEP]:
+        selected_names.add(str(row["factor_name"]))
+
+    if len(selected_names) < MIN_BASE_CORE_KEEP:
+        for row in base_candidates[MAX_BASE_CORE_KEEP:]:
+            selected_names.add(str(row["factor_name"]))
+            if len([name for name in selected_names if metadata_map[name]["layer"] == "base_core"]) >= MIN_BASE_CORE_KEEP:
+                break
+
+    for row in improvement_candidates[:MAX_IMPROVEMENT_KEEP]:
+        selected_names.add(str(row["factor_name"]))
+
+    for row in watch_candidates[:MAX_WATCH_KEEP]:
+        selected_names.add(str(row["factor_name"]))
+
+    adjusted_rows: list[dict[str, object]] = []
+    for row in selection_rows:
+        row_copy = row.copy()
+        if int(row_copy["keep_flag"]) == 1 and str(row_copy["factor_name"]) in selected_names:
+            row_copy["keep_flag"] = 1
+            row_copy["keep_reason"] = f"{row_copy['keep_reason']}|selected_after_layer_caps"
+        elif int(row_copy["keep_flag"]) == 1:
+            row_copy["keep_flag"] = 0
+            row_copy["keep_reason"] = f"{row_copy['keep_reason']}|dropped_by_layer_caps"
+        adjusted_rows.append(row_copy)
+
+    selected_rows = [metadata_map[name] for name in sorted(selected_names)]
+    return selected_rows, adjusted_rows
 
 
 def select_factor_rows(panel_df: pd.DataFrame, universe_rows: list[dict[str, str]], fold: dict[str, object]) -> tuple[list[dict[str, str]], list[dict[str, object]]]:
@@ -139,14 +221,10 @@ def select_factor_rows(panel_df: pd.DataFrame, universe_rows: list[dict[str, str
     test_mask = (panel_df["rebalance_date"] >= test_start) & (panel_df["rebalance_date"] < review_start)
 
     selection_rows: list[dict[str, object]] = []
-    selected_factors: list[dict[str, str]] = []
     for factor_row in universe_rows:
         evaluated = evaluate_factor_window(panel_df, factor_row, train_mask, test_mask)
         selection_rows.append(evaluated | {"fold_id": fold["fold_id"]})
-        if evaluated["keep_flag"] == 1:
-            selected_factors.append(factor_row)
-
-    return selected_factors, selection_rows
+    return apply_layer_caps(selection_rows, universe_rows)
 
 
 def build_scenario_rows(selected_rows: list[dict[str, str]], base_rows: list[dict[str, str]], enhanced_rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
@@ -264,6 +342,9 @@ def write_summary(
         f"- test window: next `{TEST_YEAR_COUNT}` realized May-anchor cycles",
         f"- review window: next `{REVIEW_YEAR_COUNT}` realized May-anchor cycle",
         "- factor selection is refreshed once per year, then frozen for the whole review year",
+        f"- keep rule: train_ic>`{MIN_TRAIN_RANK_IC_MEAN}`, test_ic>`{MIN_TEST_RANK_IC_MEAN}`, test_positive_ic_ratio>=`{MIN_TEST_POSITIVE_IC_RATIO}`",
+        f"- structure rule: keep only if test_top_minus_bottom>=`{MIN_TEST_TOP_MINUS_BOTTOM}` or test_ic>=`{MIN_TEST_RANK_IC_FOR_WEAK_SPREAD}`",
+        f"- layer caps: base_core min/max=`{MIN_BASE_CORE_KEEP}/{MAX_BASE_CORE_KEEP}`, improvement max=`{MAX_IMPROVEMENT_KEEP}`, watch max=`{MAX_WATCH_KEEP}`",
         "",
         f"- controlled factor universe size: `{len(universe_rows)}`",
         f"- fold count: `{len(result_df['fold_id'].drop_duplicates()) if not result_df.empty else 0}`",

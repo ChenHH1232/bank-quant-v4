@@ -59,3 +59,13 @@ Single-factor test protocol:
 - [final_core_factor_pool_v2_trimmed.md](/D:/hh/codex/v4/phase_1_fundamental/final_core_factor_pool_v2_trimmed.md)
 - [build_multifactor_combo_core_v2.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_combo_core_v2.py)
 - [build_multifactor_combo_backtest_core_v2.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_combo_backtest_core_v2.py)
+
+Improvement-factor layer:
+
+- [build_improvement_factor_manifest_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_improvement_factor_manifest_v1.py)
+- [improvement_factor_manifest_v1.csv](/D:/hh/codex/v4/phase_1_fundamental/improvement_factor_manifest_v1.csv)
+- [improvement_factor_manifest_v1.md](/D:/hh/codex/v4/phase_1_fundamental/improvement_factor_manifest_v1.md)
+- [build_improvement_factor_test_results_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_improvement_factor_test_results_v1.py)
+- [improvement_factor_panel_v1.csv](/D:/hh/codex/v4/phase_1_fundamental/improvement_factor_panel_v1.csv)
+- [improvement_factor_test_results_v1.csv](/D:/hh/codex/v4/phase_1_fundamental/improvement_factor_test_results_v1.csv)
+- [improvement_factor_test_results_v1.md](/D:/hh/codex/v4/phase_1_fundamental/improvement_factor_test_results_v1.md)

@@ -72,3 +72,6 @@ Improvement-factor layer:
 - [build_multifactor_incremental_improvement_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_incremental_improvement_v1.py)
 - [multifactor_incremental_improvement_v1.csv](/D:/hh/codex/v4/phase_1_fundamental/multifactor_incremental_improvement_v1.csv)
 - [multifactor_incremental_improvement_v1.md](/D:/hh/codex/v4/phase_1_fundamental/multifactor_incremental_improvement_v1.md)
+- [build_multifactor_top2_improvement_combo_v1.py](/D:/hh/codex/v4/phase_1_fundamental/build_multifactor_top2_improvement_combo_v1.py)
+- [multifactor_top2_improvement_combo_v1.csv](/D:/hh/codex/v4/phase_1_fundamental/multifactor_top2_improvement_combo_v1.csv)
+- [multifactor_top2_improvement_combo_v1.md](/D:/hh/codex/v4/phase_1_fundamental/multifactor_top2_improvement_combo_v1.md)

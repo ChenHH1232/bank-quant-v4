@@ -1,0 +1,75 @@
+﻿statement_family,field_name,panel_column,tier_v1,v2_action,transformed_form,rationale
+income,operating_revenue,income__operating_revenue,primary,keep,,not flagged by v2 dedup decisions
+income,interest_income,income__interest_income,primary,keep,,not flagged by v2 dedup decisions
+income,interest_expense,income__interest_expense,primary,keep,,not flagged by v2 dedup decisions
+income,commission_income,income__commission_income,primary,keep,,not flagged by v2 dedup decisions
+income,commission_expense,income__commission_expense,primary,keep,,not flagged by v2 dedup decisions
+income,investment_income,income__investment_income,primary,keep,,not flagged by v2 dedup decisions
+income,operating_profit,income__operating_profit,primary,keep,,not flagged by v2 dedup decisions
+income,total_profit,income__total_profit,primary,keep,,not flagged by v2 dedup decisions
+income,income_tax_expense,income__income_tax_expense,primary,keep,,not flagged by v2 dedup decisions
+income,net_profit,income__net_profit,primary,keep,,not flagged by v2 dedup decisions
+income,np_parent_company_owners,income__np_parent_company_owners,primary,keep,,not flagged by v2 dedup decisions
+income,minority_profit,income__minority_profit,secondary,keep,,not flagged by v2 dedup decisions
+cash_flow,cash_and_equivalents_at_end,cash_flow__cash_and_equivalents_at_end,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,cash_equivalent_increase,cash_flow__cash_equivalent_increase,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,cash_equivalents_at_beginning,cash_flow__cash_equivalents_at_beginning,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,invest_cash_paid,cash_flow__invest_cash_paid,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,net_invest_cash_flow,cash_flow__net_invest_cash_flow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,net_operate_cash_flow,cash_flow__net_operate_cash_flow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,staff_behalf_paid,cash_flow__staff_behalf_paid,primary,drop,,explicitly removed by v2 dedup decision
+cash_flow,subtotal_invest_cash_inflow,cash_flow__subtotal_invest_cash_inflow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,subtotal_invest_cash_outflow,cash_flow__subtotal_invest_cash_outflow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,subtotal_operate_cash_inflow,cash_flow__subtotal_operate_cash_inflow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,subtotal_operate_cash_outflow,cash_flow__subtotal_operate_cash_outflow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,net_finance_cash_flow,cash_flow__net_finance_cash_flow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,interest_and_commission_cashin,cash_flow__interest_and_commission_cashin,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,invest_withdrawal_cash,cash_flow__invest_withdrawal_cash,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,subtotal_finance_cash_outflow,cash_flow__subtotal_finance_cash_outflow,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,fix_intan_other_asset_acqui_cash,cash_flow__fix_intan_other_asset_acqui_cash,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,net_loan_and_advance_increase,cash_flow__net_loan_and_advance_increase,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,tax_payments,cash_flow__tax_payments,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,invest_proceeds,cash_flow__invest_proceeds,primary,keep,,not flagged by v2 dedup decisions
+cash_flow,exchange_rate_change_effect,cash_flow__exchange_rate_change_effect,primary,keep,,not flagged by v2 dedup decisions
+indicator,eps,indicator__eps,primary,keep,,not flagged by v2 dedup decisions
+indicator,adjusted_profit,indicator__adjusted_profit,primary,keep,,not flagged by v2 dedup decisions
+indicator,operating_profit,indicator__operating_profit,primary,keep,,not flagged by v2 dedup decisions
+indicator,value_change_profit,indicator__value_change_profit,primary,keep,,not flagged by v2 dedup decisions
+indicator,roe,indicator__roe,primary,keep_core,,explicitly retained by v2 dedup decision
+indicator,inc_return,indicator__inc_return,primary,drop,,explicitly removed by v2 dedup decision
+indicator,roa,indicator__roa,primary,drop,,explicitly removed by v2 dedup decision
+indicator,net_profit_margin,indicator__net_profit_margin,primary,keep,,not flagged by v2 dedup decisions
+indicator,expense_to_total_revenue,indicator__expense_to_total_revenue,primary,keep,,not flagged by v2 dedup decisions
+indicator,operation_profit_to_total_revenue,indicator__operation_profit_to_total_revenue,primary,keep,,not flagged by v2 dedup decisions
+indicator,net_profit_to_total_revenue,indicator__net_profit_to_total_revenue,primary,keep,,not flagged by v2 dedup decisions
+indicator,ocf_to_revenue,indicator__ocf_to_revenue,primary,keep,,not flagged by v2 dedup decisions
+indicator,inc_total_revenue_annual,indicator__inc_total_revenue_annual,primary,keep,,not flagged by v2 dedup decisions
+indicator,inc_revenue_annual,indicator__inc_revenue_annual,primary,keep,,not flagged by v2 dedup decisions
+indicator,inc_operation_profit_annual,indicator__inc_operation_profit_annual,primary,drop,,explicitly removed by v2 dedup decision
+indicator,inc_net_profit_annual,indicator__inc_net_profit_annual,primary,drop,,explicitly removed by v2 dedup decision
+indicator,inc_net_profit_to_shareholders_annual,indicator__inc_net_profit_to_shareholders_annual,primary,keep_core,,explicitly retained by v2 dedup decision
+balance,cash_equivalents,balance__cash_equivalents,primary,keep,,not flagged by v2 dedup decisions
+balance,deferred_tax_assets,balance__deferred_tax_assets,primary,keep,,not flagged by v2 dedup decisions
+balance,lend_capital,balance__lend_capital,primary,keep,,not flagged by v2 dedup decisions
+balance,paidin_capital,balance__paidin_capital,primary,keep,,not flagged by v2 dedup decisions
+balance,retained_profit,balance__retained_profit,primary,keep,,not flagged by v2 dedup decisions
+balance,total_assets,balance__total_assets,primary,keep_core,log(balance__total_assets),explicitly retained by v2 dedup decision
+balance,total_liability,balance__total_liability,primary,keep,,not flagged by v2 dedup decisions
+balance,total_owner_equities,balance__total_owner_equities,primary,keep,,not flagged by v2 dedup decisions
+balance,capital_reserve_fund,balance__capital_reserve_fund,primary,keep,,not flagged by v2 dedup decisions
+balance,equities_parent_company_owners,balance__equities_parent_company_owners,primary,keep,,not flagged by v2 dedup decisions
+balance,ordinary_risk_reserve_fund,balance__ordinary_risk_reserve_fund,primary,keep,,not flagged by v2 dedup decisions
+balance,surplus_reserve_fund,balance__surplus_reserve_fund,primary,keep,,not flagged by v2 dedup decisions
+balance,taxs_payable,balance__taxs_payable,primary,keep,,not flagged by v2 dedup decisions
+balance,salaries_payable,balance__salaries_payable,primary,keep,,not flagged by v2 dedup decisions
+bank_indicator,Nonperforming_loan_rate,bank_indicator__Nonperforming_loan_rate,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,capital_adequacy_ratio,bank_indicator__capital_adequacy_ratio,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,core_level_capital_adequacy_ratio,bank_indicator__core_level_capital_adequacy_ratio,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,cost_to_income_ratio,bank_indicator__cost_to_income_ratio,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,deposit_loan_ratio,bank_indicator__deposit_loan_ratio,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,net_interest_margin,bank_indicator__net_interest_margin,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,non_interest_income_ratio,bank_indicator__non_interest_income_ratio,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,non_performing_loan_provision_coverage,bank_indicator__non_performing_loan_provision_coverage,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,total_deposit,bank_indicator__total_deposit,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,total_loan,bank_indicator__total_loan,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped
+bank_indicator,weighted_risky_asset,bank_indicator__weighted_risky_asset,annual_primary,keep_core,,bank-specific annual field retained unless explicitly dropped

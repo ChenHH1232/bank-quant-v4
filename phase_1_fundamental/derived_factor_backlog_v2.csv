@@ -1,0 +1,5 @@
+﻿cluster_id,derived_expression,priority,capability_status,notes
+Q01,cash_flow__staff_behalf_paid / income__operating_revenue,candidate,ready_now,labor-cost intensity candidate
+Q01,cash_flow__staff_behalf_paid / average_total_assets,candidate,ready_with_construction_rule,requires lag/average total-assets construction from panel history
+Q06,income__investment_income / average_investment_assets,preferred,blocked_need_new_denominator,investment asset denominator not present in current panel header; needs new source/definition
+Q06,income__investment_income / income__operating_revenue,fallback,ready_now,fallback contribution ratio if denominator unavailable

@@ -1,6 +1,7 @@
 import csv
 from collections import defaultdict
 from datetime import date, datetime
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -133,6 +134,31 @@ def compute_average_daily_return(price_df: pd.DataFrame, start_date: date | None
     return f"{float(daily_returns.mean()):.10f}"
 
 
+def safe_float(value: str) -> float | None:
+    text = (value or "").strip()
+    if not text:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def ratio_text(numerator: str, denominator: str) -> str:
+    left = safe_float(numerator)
+    right = safe_float(denominator)
+    if left is None or right is None or right == 0:
+        return ""
+    return f"{left / right:.10f}"
+
+
+def log_text(value: str) -> str:
+    number = safe_float(value)
+    if number is None or number <= 0:
+        return ""
+    return f"{math.log(number):.10f}"
+
+
 def build_horizon_maps(pool_rows: list[dict[str, str]]) -> tuple[dict[str, str], dict[str, str]]:
     ordered_dates = sorted({(row.get("rebalance_date") or "").strip() for row in pool_rows if row.get("rebalance_date")})
     next_quarter_map: dict[str, str] = {}
@@ -226,6 +252,18 @@ def build_panel_rows() -> tuple[list[dict[str, str]], dict[str, int]]:
                     if not value:
                         missing_counter[key] += 1
 
+        # V2 immediately-available derived candidates. These remain transparent
+        # and can be reviewed independently from the raw statement fields.
+        output_row["derived__log_total_assets"] = log_text(output_row.get("balance__total_assets", ""))
+        output_row["derived__staff_cash_to_operating_revenue"] = ratio_text(
+            output_row.get("cash_flow__staff_behalf_paid", ""),
+            output_row.get("income__operating_revenue", ""),
+        )
+        output_row["derived__investment_income_to_operating_revenue"] = ratio_text(
+            output_row.get("income__investment_income", ""),
+            output_row.get("income__operating_revenue", ""),
+        )
+
         panel_rows.append(output_row)
 
     return panel_rows, dict(missing_counter)
@@ -303,6 +341,9 @@ def build_tradable_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
                 "y_quarter_end_date": row.get("y_quarter_end_date", ""),
                 "y_year_avg_daily_return_close": row.get("y_year_avg_daily_return_close", ""),
                 "y_year_end_date": row.get("y_year_end_date", ""),
+                "derived__log_total_assets": row.get("derived__log_total_assets", ""),
+                "derived__staff_cash_to_operating_revenue": row.get("derived__staff_cash_to_operating_revenue", ""),
+                "derived__investment_income_to_operating_revenue": row.get("derived__investment_income_to_operating_revenue", ""),
             }
         )
     return tradable_rows

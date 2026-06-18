@@ -1,0 +1,17 @@
+cluster_id,decision_type,factor_name_or_cluster,action,notes
+Q01,keep,balance__total_assets,keep_core,use log(total_assets) in modeling
+Q01,drop,cash_flow__staff_behalf_paid,drop_raw,do not keep raw absolute value as scale representative
+Q01,derive,cash_flow__staff_behalf_paid / income__operating_revenue,derive_backlog,labor-cost intensity candidate
+Q01,derive,cash_flow__staff_behalf_paid / average_total_assets,derive_backlog,labor-cost intensity candidate
+Q02,cluster,Q02,delete_cluster,investment cash-flow activity is not investment skill
+Q03,keep,indicator__inc_net_profit_to_shareholders_annual,keep_core,parent-attributable profit growth preferred
+Q03,drop,indicator__inc_net_profit_annual,drop_duplicate,replaced by attributable net-profit growth
+Q03,drop,indicator__inc_operation_profit_annual,drop_duplicate,weaker shareholder alignment
+Q04,keep,indicator__roe,keep_core,retain with capital-adequacy controls
+Q04,drop,indicator__inc_return,drop_duplicate,near-duplicate ROE-style return metric
+Q04,drop,indicator__roa,drop_from_core,can be excluded if capital adequacy remains in model
+Q05,cluster,Q05,delete_cluster,bank operating cash flow is not clean cross-sectional quality signal
+Q06,cluster,Q06,rebuild_cluster,do not keep raw absolute investment-income variables
+Q06,derive,income__investment_income / average_investment_assets,derive_preferred,preferred investment-return proxy
+Q06,derive,income__investment_income / income__operating_revenue,derive_fallback,fallback contribution ratio if denominator unavailable
+Q07,cluster,Q07,delete_cluster,bank net-margin fields are not clean cross-bank core signals

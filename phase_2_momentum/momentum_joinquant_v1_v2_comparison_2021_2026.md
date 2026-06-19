@@ -99,9 +99,20 @@ Reason:
 The present evidence supports:
 - keep `v1` as the active JoinQuant monthly momentum baseline
 - keep `v2` only as an archived branch of evidence showing that direct liquidity-and-size neutralization did not help this deployment version
-- continue next tests from the `v1` direction, especially around factor mix and refresh logic, rather than promoting `v2`
+- record later deployment variants as acceptance tests, rather than repeatedly tuning on this same out-of-sample window
+
+## Out-of-Sample Discipline
+
+Method rule from this point forward:
+- treat `2021-05-31` to `2026-05-29` as an out-of-sample acceptance window
+- do not use repeated reruns on this same window to keep revising factor weights, annual plans, or execution rules
+- any future factor-plan revision should be justified by pre-2021 train/validation evidence, not by retrofitting the `2021-2026` outcome
+
+Practical implication:
+- `v2` is already enough to show that direct neutralization did not help this deployment
+- later variants such as pure `mom_6_1` should be recorded as pass/fail evidence, not used as reasons to keep hand-tuning the same strategy on the same out-of-sample segment
 
 Likely next research directions:
-- test a more `6-1`-centered annual factor plan
+- go back to pre-2021 train/validation research if factor selection needs to be revisited
 - test whether `12-1` is acting as a hidden slow-style filter rather than pure bank momentum
-- keep monthly execution, but leave factor refresh annual unless a later experiment shows clear benefit
+- keep monthly execution, but leave factor refresh annual unless a later research-only experiment shows clear benefit

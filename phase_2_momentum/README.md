@@ -45,6 +45,7 @@ Current V1 artifacts:
 - `momentum_monthly_neutralized_rolling_validation_v3_results.csv` / `_folds.csv` / `.md`: neutralized monthly rolling validation outputs
 - `joinquant_v4_monthly_momentum_strategy_v1.py`: JoinQuant monthly execution baseline with annual offline factor refresh and raw scoring
 - `joinquant_v4_monthly_momentum_strategy_v2.py`: JoinQuant monthly execution variant with cross-sectional neutralization
+- `joinquant_v4_monthly_momentum_strategy_v3.py`: JoinQuant monthly execution variant using pure `mom_6_1` as the annual active factor
 - `momentum_joinquant_v1_v2_comparison_2021_2026.md`: direct JoinQuant comparison of raw `v1` versus neutralized `v2`
 - `momentum_candidate_pool_draft_v1.md`: frozen momentum candidate hierarchy draft
 
@@ -69,12 +70,21 @@ Current JoinQuant execution main line:
 - Factor refresh is annual, using an offline factor-selection table fixed on each May rebalance trading day
 - Portfolio construction is equal-weight top bucket inside the filtered bank pool
 - `joinquant_v4_monthly_momentum_strategy_v2.py` is retained as a negative validation branch, not the promoted main line
+- `joinquant_v4_monthly_momentum_strategy_v3.py` is also a negative validation branch; pure `mom_6_1` did not survive the out-of-sample deployment check
 
 Current judgment:
 
 - For this deployment version, raw `v1` is better than neutralized `v2`
 - `v1` remains more consistent with the present objective: outperform the benchmark more clearly in rising environments
 - `v2` showed somewhat better downside behavior, but gave up too much upside participation
+- Pure `mom_6_1` looked stronger in monthly train/test research, but failed in the `2021-05-31` to `2026-05-29` out-of-sample JoinQuant run
+
+Out-of-sample discipline:
+
+- The `2021-05-31` onward JoinQuant window is treated as out-of-sample acceptance, not as a parameter-tuning sandbox
+- Do not keep revising factor weights or annual plans based on repeated reads of the same `2021-2026` backtest window
+- Future factor-selection changes should come from pre-2021 train/validation research only
+- Post-2021 JoinQuant runs should be recorded as pass/fail evidence, then archived without reverse-optimizing the strategy on that same window
 
 Suggested next command:
 

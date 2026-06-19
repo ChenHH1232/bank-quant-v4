@@ -1,0 +1,34 @@
+﻿field_name,field_group,priority,status,note
+date,base,required,present,raw field
+code,base,required,present,raw field
+open,base,required,present,raw field
+close,base,required,present,raw field
+high,base,required,present,raw field
+low,base,required,present,raw field
+volume,base,required,present,raw field
+money,base,required,present,raw field
+turnover_ratio,base,required,present,raw field
+market_cap,base,required,present,raw field
+circulating_market_cap,base,recommended,present,raw field
+pb_ratio,base,recommended,present,raw field
+pe_ratio,base,recommended,present,raw field
+listed_start,base,required,present,raw field
+listed_trading_days,base,required,present,raw field
+daily_return_close,base,recommended,present,raw field
+rev_5d,derived,required,derivable,derive from daily close
+rev_10d,derived,required,derivable,derive from daily close
+rev_20d,derived,required,derivable,derive from daily close
+excess_rev_5d,derived,recommended,derivable,derive from rev_5d cross-section
+excess_rev_10d,derived,recommended,derivable,derive from rev_10d cross-section
+close_to_ma20,derived,required,derivable,derive from daily close
+intramonth_drawdown_20d,derived,recommended,derivable,derive from close or high/close window
+avg_money_20d,derived,required,derivable,derive from money
+avg_turnover_20d,derived,required,derivable,derive from turnover_ratio
+avg_mcap_20d,derived,required,derivable,derive from market_cap
+volatility_20d,derived,recommended,derivable,derive from daily_return_close
+down_day_ratio_20d,derived,recommended,derivable,derive from daily_return_close
+abnormal_volume_ratio,derived,optional,derivable,derive from money or volume
+paused,extra,optional,missing,missing; only needed for stricter execution realism
+is_st,extra,optional,missing,missing; can be queried later
+high_limit,extra,optional,missing,missing; execution-layer enhancement
+low_limit,extra,optional,missing,missing; execution-layer enhancement

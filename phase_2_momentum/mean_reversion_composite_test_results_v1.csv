@@ -1,0 +1,4 @@
+﻿factor_name,components,direction,train_rows,validation_rows,train_dates,validation_dates,train_rank_ic_mean,validation_rank_ic_mean,train_positive_ic_ratio,validation_positive_ic_ratio,train_top_minus_bottom,validation_top_minus_bottom,final_status
+rev5_downratio,-0.7*rev_5d + 0.3*down_day_ratio_20d,larger_better,879,703,48,24,-0.002691,0.018938,0.458333,0.458333,-0.00041375,0.00490857,C
+rev5_abnvol,-0.7*rev_5d + 0.3*abnormal_volume_ratio,larger_better,879,703,48,24,0.060506,0.05792,0.583333,0.666667,0.00601332,0.00969369,A
+rev5_lowpb,-0.7*rev_5d + -0.3*pb_ratio,larger_better,879,703,48,24,0.050113,-0.029805,0.541667,0.375,0.00372997,-0.0029867,C

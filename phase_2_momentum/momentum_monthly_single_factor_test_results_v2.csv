@@ -1,0 +1,4 @@
+﻿factor_name,factor_family,target_label,direction,train_rows,validation_rows,train_dates,validation_dates,train_missing_ratio,validation_missing_ratio,train_rank_ic_mean,validation_rank_ic_mean,train_rank_ic_ir,validation_rank_ic_ir,train_positive_ic_ratio,validation_positive_ic_ratio,train_top_minus_bottom,validation_top_minus_bottom,train_monotonic_flag,validation_monotonic_flag,final_status
+mom_3_1,momentum,y_month_total_return_close,smaller_better,430,366,48,24,0.00463,0.0,0.036605,-0.061686,0.076684,-0.147719,0.541667,0.541667,0.0072864,-0.01363127,0,0,C
+mom_6_1,momentum,y_month_total_return_close,larger_better,430,366,48,24,0.00463,0.0,0.020997,0.064954,0.045952,0.158259,0.541667,0.541667,0.00270778,0.01777839,0,0,A
+mom_12_1,momentum,y_month_total_return_close,smaller_better,430,366,48,24,0.00463,0.0,0.01935,-0.067926,0.039688,-0.177397,0.583333,0.375,-0.00050223,-0.01978097,0,0,C

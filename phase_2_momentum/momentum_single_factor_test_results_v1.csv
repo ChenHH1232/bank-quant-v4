@@ -1,0 +1,9 @@
+﻿factor_name,factor_family,target_label,direction,train_rows,validation_rows,train_dates,validation_dates,train_missing_ratio,validation_missing_ratio,train_rank_ic_mean,validation_rank_ic_mean,train_rank_ic_ir,validation_rank_ic_ir,train_positive_ic_ratio,validation_positive_ic_ratio,train_top_minus_bottom,validation_top_minus_bottom,train_monotonic_flag,validation_monotonic_flag,final_status
+mom_1m,momentum,y_year_total_return_close,smaller_better,72,49,5,2,0.0,0.0,0.20428,-0.24965,0.723742,-0.951063,0.6,0.5,0.06935803,-0.37173228,0,0,D
+mom_3m,momentum,y_year_total_return_close,smaller_better,71,47,5,2,0.013889,0.040816,0.223893,0.003945,0.748083,0.048187,0.8,0.5,0.14658969,-0.02607335,0,0,D
+mom_6m,momentum,y_year_total_return_close,smaller_better,57,45,4,2,0.208333,0.081633,0.15302,-0.066365,0.346175,-0.639574,0.75,0.5,0.11089101,-0.08809138,0,0,D
+mom_12m,momentum,y_year_total_return_close,smaller_better,56,43,4,2,0.222222,0.122449,0.012582,-0.345172,0.024306,-10.137645,0.5,0.0,-0.03458286,-0.34078465,0,0,D
+mom_12_1,momentum,y_year_total_return_close,larger_better,56,43,4,2,0.222222,0.122449,0.071682,0.283851,0.229195,1.997219,0.5,1.0,0.03931312,0.21953049,0,0,D
+mom_6_1,momentum,y_year_total_return_close,smaller_better,57,45,4,2,0.208333,0.081633,0.029125,0.066879,0.086863,0.288502,0.25,0.5,0.02425296,0.03544974,0,0,D
+liq_money_1m,liquidity,y_year_total_return_close,larger_better,69,49,5,2,0.041667,0.0,0.163121,0.261793,0.469614,8.012512,0.8,1.0,0.00679438,0.2103603,0,0,D
+liq_turnover_1m,liquidity,y_year_total_return_close,larger_better,69,49,5,2,0.041667,0.0,0.002196,-0.12952,0.007928,-0.538251,0.4,0.5,0.004697,-0.10974334,0,0,D

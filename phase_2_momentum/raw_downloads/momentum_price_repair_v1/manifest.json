@@ -1,0 +1,21 @@
+{
+  "dataset": "momentum_price_repair_v1",
+  "source": "JoinQuant get_price + get_trade_days",
+  "start_date": "2014-01-01",
+  "end_date": "2026-05-01",
+  "price_fields": [
+    "open",
+    "close",
+    "high",
+    "low",
+    "volume",
+    "money"
+  ],
+  "fq": "pre",
+  "universe_path": "D:\\hh\\codex\\v4\\phase_1_fundamental\\raw_downloads\\all_banks\\bank_universe.csv",
+  "notes": [
+    "This dataset is a non-destructive repaired price layer for momentum research.",
+    "Files preserve explicit trading dates and do not overwrite legacy phase_1 daily_price.csv outputs.",
+    "Trade calendar is saved separately for annual rebalance alignment and rolling-window construction."
+  ]
+}

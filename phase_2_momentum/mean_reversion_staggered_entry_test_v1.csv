@@ -1,0 +1,4 @@
+﻿strategy_name,case_count,avg_delay_weeks_proxy,total_return_proxy,max_drawdown_proxy,avg_case_return_12w,median_case_return_12w
+immediate_entry,15,0.0,0.321575,-0.083261,0.02161,0.027169
+timed_entry_rev5_abnvol,15,1.4,0.38906,-0.080203,0.024923,0.056582
+staggered_entry_50_50,15,0.7,0.35911,-0.077621,0.023266,0.041876

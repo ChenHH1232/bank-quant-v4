@@ -41,15 +41,28 @@ Composite findings:
 - this means `short-term selloff + abnormal volume` is stronger than plain short-term reversal
 - in anchored validation, `rev5_abnvol` slightly beat raw `rev_5d` in both `2019` validation and `2020` review
 
+Execution findings:
+- standalone tactical execution prefers `weekly` over `daily` on the frozen V1 spec
+- but the first weekly `rev5_abnvol` overlay did **not** improve the real annual approved-pool baseline in the frozen post-2021 acceptance window
+- entry-timing tests are more promising than full replacement:
+  - return-first candidate: `timed_entry_rev5_abnvol`
+  - practical balance candidate: `staggered_entry_50_50`
+- therefore mean reversion currently remains a valid tactical branch, but not an approved default execution override for the annual backbone
+
 Interpretation:
 - bank mean reversion currently looks like a short-horizon tactical repair signal
-- it is better viewed as a daily or weekly tactical layer, not as a third annual-update backbone alongside fundamentals and momentum
+- it is better viewed as a weekly tactical layer, not as a third annual-update backbone alongside fundamentals and momentum
+- current evidence supports keeping the branch alive as an execution and entry-timing layer, but not promoting it into the main deployment stack yet
 
 Key references:
 - [mean_reversion_field_coverage_check_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_field_coverage_check_v1.md)
 - [mean_reversion_single_factor_test_results_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_single_factor_test_results_v1.md)
 - [mean_reversion_composite_test_results_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_composite_test_results_v1.md)
 - [mean_reversion_anchored_validation_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_anchored_validation_v1.md)
+- [mean_reversion_execution_comparison_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_execution_comparison_v1.md)
+- [mean_reversion_overlay_conclusion_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_overlay_conclusion_v1.md)
+- [mean_reversion_entry_timing_summary_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_entry_timing_summary_v1.md)
+- [mean_reversion_stage_summary_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_stage_summary_v1.md)
 
 ## Process Discipline
 

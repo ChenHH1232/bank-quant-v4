@@ -80,8 +80,45 @@ Key references:
 - [mean_reversion_stage_summary_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_stage_summary_v1.md)
 - [mean_reversion_final_archive_conclusion_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_final_archive_conclusion_v1.md)
 
+## Fundamental Plus Momentum Dual Engine
+
+Research setup:
+- the current dual-engine path keeps fundamentals and momentum logically separate
+- the fundamental engine uses the approved annual or quasi-quarterly stock pool
+- the momentum engine uses a monthly deployment-safe `mom_12_1` structure
+- the two engines do not mix raw scores; they only interact at the final portfolio-allocation layer
+
+Pre-2021 rolling evidence:
+- the first-pass rolling test is archived in [fundamental_momentum_dual_engine_rolling_test_v1.md](D:\hh\codex\v4\phase_2_momentum\fundamental_momentum_dual_engine_rolling_test_v1.md)
+- within that constrained pre-2021 common-sample test, the blended allocations beat both single-engine baselines
+- the current best first-pass blend is `60/40`, meaning `60%` fundamental budget plus `40%` momentum budget
+- however, the current test is still conservative and constrained by strict `5%` single-engine stock caps and `8%` final stock caps
+- under that setup, `fundamental_only` and `momentum_only` became identical, so the rolling evidence is useful but not yet fully discriminative
+
+Post-2021 JoinQuant interpretation:
+- the executable JoinQuant dual-engine version produced a stable but not dominant out-of-sample profile in the frozen `2021-05-31` to `2026-05-29` acceptance window
+- current observed profile:
+- strategy return = `35.54%`
+- excess return = `13.08%`
+- max drawdown = `13.74%`
+- beta = `0.780`
+- volatility = `0.138`
+- compared with the stronger pure fundamental deployment line, the dual-engine version gives up return but improves stability materially
+
+Current role:
+- this branch should be interpreted as a `portfolio construction` or `risk-balancing` line, not as the new primary alpha main line
+- it does prove that fundamental and momentum signals can coexist cleanly without forcing them into one mixed score
+- at the current stage, the pure fundamental main line still keeps priority for return-seeking deployment
+- the dual-engine branch is better viewed as a future allocation layer candidate for lower-drawdown capital
+
+Key references:
+- [fundamental_momentum_dual_engine_rolling_plan_v1.md](D:\hh\codex\v4\phase_2_momentum\fundamental_momentum_dual_engine_rolling_plan_v1.md)
+- [fundamental_momentum_dual_engine_rolling_test_v1.md](D:\hh\codex\v4\phase_2_momentum\fundamental_momentum_dual_engine_rolling_test_v1.md)
+- [joinquant_v4_dual_engine_strategy_v1.py](D:\hh\codex\v4\phase_2_momentum\joinquant_v4_dual_engine_strategy_v1.py)
+
 ## Process Discipline
 
 - the `2021-05-31` onward JoinQuant window is frozen as out-of-sample acceptance for momentum
 - do not continue tuning momentum plans against that same out-of-sample segment
 - mean-reversion should proceed as a separate short-horizon research branch and should not be mixed into the momentum explanation layer
+- dual-engine follow-up should also return to pre-2021 train and validation research first, rather than repeatedly tuning against the same frozen post-2021 acceptance window

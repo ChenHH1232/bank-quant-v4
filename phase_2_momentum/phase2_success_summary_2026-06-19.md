@@ -47,12 +47,17 @@ Execution findings:
 - entry-timing tests are more promising than full replacement:
   - return-first candidate: `timed_entry_rev5_abnvol`
   - practical balance candidate: `staggered_entry_50_50`
+- sell-side take-profit tests are weaker:
+  - a minimal partial trim rule reduced drawdown a bit
+  - but it also reduced total return materially
+- so the current branch ranking is: `buy-side timing` stronger than `sell-side trimming`
 - therefore mean reversion currently remains a valid tactical branch, but not an approved default execution override for the annual backbone
 
 Interpretation:
 - bank mean reversion currently looks like a short-horizon tactical repair signal
 - it is better viewed as a weekly tactical layer, not as a third annual-update backbone alongside fundamentals and momentum
 - current evidence supports keeping the branch alive as an execution and entry-timing layer, but not promoting it into the main deployment stack yet
+- among current use cases, entry timing has the strongest evidence and stop-profit has only weak supporting evidence
 
 Key references:
 - [mean_reversion_field_coverage_check_v1.md](D:\hh\codex\v4\phase_2_momentum\mean_reversion_field_coverage_check_v1.md)

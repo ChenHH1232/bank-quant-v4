@@ -27,6 +27,11 @@ Entry-timing findings:
 - `timed_entry_rev5_abnvol` is the strongest current return-first candidate
 - `staggered_entry_50_50` is the best current practical balance candidate because it gives up some upside but improves drawdown versus both immediate entry and full-delay aggressiveness
 
+Take-profit findings:
+- the first minimal `overheat_score_v1` trim test showed only weak positive evidence
+- partial trimming reduced drawdown somewhat, but also reduced total return noticeably
+- the current safe interpretation is: mean reversion is more useful on the buy side than on the sell side
+
 ## What Was Not Confirmed
 
 These ideas do not yet have promotion evidence:
@@ -35,6 +40,7 @@ These ideas do not yet have promotion evidence:
 - daily execution as the default execution rhythm
 - weekly `rev5_abnvol` overlay as a default execution override on top of the annual approved pool
 - a fully locked universal entry-delay rule that dominates in every case
+- a strong enough sell-side overheat rule to justify default promotion as a stop-profit layer
 
 In the frozen post-2021 acceptance window:
 - annual approved-pool baseline total return = `0.584687`
@@ -51,6 +57,7 @@ The current safest interpretation is:
 - but it is not yet proven as a default override layer for the annual backbone
 - therefore it should remain a tactical branch rather than being promoted into the main deployment stack
 - its most promising current use is entry timing, not full weekly basket replacement
+- within the current evidence set, buy-side use is stronger than sell-side use
 
 ## Recommended Status
 
@@ -60,6 +67,7 @@ Current status labels:
 - standalone tactical branch: `keep alive`
 - annual-pool overlay promotion: `not approved`
 - entry-timing branch: `promising`
+- take-profit branch: `weak positive evidence, not approved`
 
 ## Valid Next Steps
 
@@ -69,6 +77,7 @@ If this branch is continued later, the most valid next directions are:
 2. test conditional activation by regime instead of all-week always-on overlay
 3. test overlay on a momentum-approved subset instead of the annual approved pool directly
 4. if implementation is needed, compare `full-delay` versus `50/50 staggered` as the first practical deployment choice
+5. keep sell-side mean-reversion ideas as secondary and lower-priority than buy-side timing ideas
 
 ## What To Avoid
 

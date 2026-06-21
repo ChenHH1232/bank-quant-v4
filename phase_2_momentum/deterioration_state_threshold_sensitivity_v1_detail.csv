@@ -1,0 +1,73 @@
+﻿fold_id,candidate_name,threshold_name,rebalance_date,formula,low_q,high_q,state_score,low_cut,high_cut,state_bucket,fundamental_budget,momentum_budget,portfolio_return,cash_weight
+fold_01,delta_median_only,q30_q70,2018-11-01,+ 1.0*score_delta_median,0.3,0.7,-0.531514,-0.507753,0.498308,weak_down,1.0,0.0,0.00017026,0.4
+fold_01,delta_median_only,q33_q67,2018-11-01,+ 1.0*score_delta_median,0.33,0.67,-0.531514,-0.499993,0.257937,weak_down,1.0,0.0,0.00017026,0.4
+fold_01,delta_median_only,q25_q75,2018-11-01,+ 1.0*score_delta_median,0.25,0.75,-0.531514,-0.67137,0.991944,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,delta_median_only,q20_q80,2018-11-01,+ 1.0*score_delta_median,0.2,0.8,-0.531514,-0.834987,1.485581,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,breadth_only,q30_q70,2018-11-01,- 1.0*deterioration_ratio,0.3,0.7,-0.206886,-0.362245,0.958311,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,breadth_only,q33_q67,2018-11-01,- 1.0*deterioration_ratio,0.33,0.67,-0.206886,-0.315637,0.760228,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,breadth_only,q25_q75,2018-11-01,- 1.0*deterioration_ratio,0.25,0.75,-0.206886,-0.754286,1.020212,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,breadth_only,q20_q80,2018-11-01,- 1.0*deterioration_ratio,0.2,0.8,-0.206886,-1.146326,1.082113,neutral_flat,0.8,0.2,0.0002246947,0.200769
+fold_01,fixed_blend_60_40,fixed,2018-11-01,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,0.0002534591,0.106667
+fold_01,delta_median_only,q30_q70,2019-05-06,+ 1.0*score_delta_median,0.3,0.7,-1.225103,-0.507753,0.498308,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,delta_median_only,q33_q67,2019-05-06,+ 1.0*score_delta_median,0.33,0.67,-1.225103,-0.499993,0.257937,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,delta_median_only,q25_q75,2019-05-06,+ 1.0*score_delta_median,0.25,0.75,-1.225103,-0.67137,0.991944,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,delta_median_only,q20_q80,2019-05-06,+ 1.0*score_delta_median,0.2,0.8,-1.225103,-0.834987,1.485581,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,breadth_only,q30_q70,2019-05-06,- 1.0*deterioration_ratio,0.3,0.7,-0.362245,-0.362245,0.958311,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,breadth_only,q33_q67,2019-05-06,- 1.0*deterioration_ratio,0.33,0.67,-0.362245,-0.315637,0.760228,weak_down,1.0,0.0,-9.81861e-05,0.35
+fold_01,breadth_only,q25_q75,2019-05-06,- 1.0*deterioration_ratio,0.25,0.75,-0.362245,-0.754286,1.020212,neutral_flat,0.8,0.2,-0.0001023175,0.15
+fold_01,breadth_only,q20_q80,2019-05-06,- 1.0*deterioration_ratio,0.2,0.8,-0.362245,-1.146326,1.082113,neutral_flat,0.8,0.2,-0.0001023175,0.15
+fold_01,fixed_blend_60_40,fixed,2019-05-06,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,-9.79457e-05,0.094545
+fold_01,delta_median_only,q30_q70,2019-09-02,+ 1.0*score_delta_median,0.3,0.7,0.816588,-0.507753,0.498308,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,delta_median_only,q33_q67,2019-09-02,+ 1.0*score_delta_median,0.33,0.67,0.816588,-0.499993,0.257937,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,delta_median_only,q25_q75,2019-09-02,+ 1.0*score_delta_median,0.25,0.75,0.816588,-0.67137,0.991944,neutral_flat,0.8,0.2,0.0021474162,0.15
+fold_01,delta_median_only,q20_q80,2019-09-02,+ 1.0*score_delta_median,0.2,0.8,0.816588,-0.834987,1.485581,neutral_flat,0.8,0.2,0.0021474162,0.15
+fold_01,breadth_only,q30_q70,2019-09-02,- 1.0*deterioration_ratio,0.3,0.7,1.375329,-0.362245,0.958311,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,breadth_only,q33_q67,2019-09-02,- 1.0*deterioration_ratio,0.33,0.67,1.375329,-0.315637,0.760228,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,breadth_only,q25_q75,2019-09-02,- 1.0*deterioration_ratio,0.25,0.75,1.375329,-0.754286,1.020212,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,breadth_only,q20_q80,2019-09-02,- 1.0*deterioration_ratio,0.2,0.8,1.375329,-1.146326,1.082113,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_01,fixed_blend_60_40,fixed,2019-09-02,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,0.0023208015,0.094545
+fold_01,delta_median_only,q30_q70,2019-11-01,+ 1.0*score_delta_median,0.3,0.7,-0.839962,-0.507753,0.498308,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,delta_median_only,q33_q67,2019-11-01,+ 1.0*score_delta_median,0.33,0.67,-0.839962,-0.499993,0.257937,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,delta_median_only,q25_q75,2019-11-01,+ 1.0*score_delta_median,0.25,0.75,-0.839962,-0.67137,0.991944,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,delta_median_only,q20_q80,2019-11-01,+ 1.0*score_delta_median,0.2,0.8,-0.839962,-0.834987,1.485581,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,breadth_only,q30_q70,2019-11-01,- 1.0*deterioration_ratio,0.3,0.7,-0.814015,-0.362245,0.958311,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,breadth_only,q33_q67,2019-11-01,- 1.0*deterioration_ratio,0.33,0.67,-0.814015,-0.315637,0.760228,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,breadth_only,q25_q75,2019-11-01,- 1.0*deterioration_ratio,0.25,0.75,-0.814015,-0.754286,1.020212,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_01,breadth_only,q20_q80,2019-11-01,- 1.0*deterioration_ratio,0.2,0.8,-0.814015,-1.146326,1.082113,neutral_flat,0.8,0.2,-0.0008932125,0.1
+fold_01,fixed_blend_60_40,fixed,2019-11-01,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,-0.0009460834,0.067692
+fold_02,delta_median_only,q30_q70,2019-09-02,+ 1.0*score_delta_median,0.3,0.7,1.016939,-0.379743,0.257506,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,delta_median_only,q33_q67,2019-09-02,+ 1.0*score_delta_median,0.33,0.67,1.016939,-0.275906,-0.016648,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,delta_median_only,q25_q75,2019-09-02,+ 1.0*score_delta_median,0.25,0.75,1.016939,-0.552805,0.714429,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,delta_median_only,q20_q80,2019-09-02,+ 1.0*score_delta_median,0.2,0.8,1.016939,-0.57082,1.277442,neutral_flat,0.8,0.2,0.0021474162,0.15
+fold_02,breadth_only,q30_q70,2019-09-02,- 1.0*deterioration_ratio,0.3,0.7,1.604868,-0.33596,0.69656,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,breadth_only,q33_q67,2019-09-02,- 1.0*deterioration_ratio,0.33,0.67,1.604868,-0.33596,0.431055,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,breadth_only,q25_q75,2019-09-02,- 1.0*deterioration_ratio,0.25,0.75,1.604868,-0.33596,1.139069,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,breadth_only,q20_q80,2019-09-02,- 1.0*deterioration_ratio,0.2,0.8,1.604868,-0.86144,1.22204,strong_up,0.6,0.4,0.0023208015,0.094545
+fold_02,fixed_blend_60_40,fixed,2019-09-02,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,0.0023208015,0.094545
+fold_02,delta_median_only,q30_q70,2019-11-01,+ 1.0*score_delta_median,0.3,0.7,-0.557533,-0.379743,0.257506,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,delta_median_only,q33_q67,2019-11-01,+ 1.0*score_delta_median,0.33,0.67,-0.557533,-0.275906,-0.016648,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,delta_median_only,q25_q75,2019-11-01,+ 1.0*score_delta_median,0.25,0.75,-0.557533,-0.552805,0.714429,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,delta_median_only,q20_q80,2019-11-01,+ 1.0*score_delta_median,0.2,0.8,-0.557533,-0.57082,1.277442,neutral_flat,0.8,0.2,-0.0008932125,0.1
+fold_02,breadth_only,q30_q70,2019-11-01,- 1.0*deterioration_ratio,0.3,0.7,-0.840576,-0.33596,0.69656,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,breadth_only,q33_q67,2019-11-01,- 1.0*deterioration_ratio,0.33,0.67,-0.840576,-0.33596,0.431055,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,breadth_only,q25_q75,2019-11-01,- 1.0*deterioration_ratio,0.25,0.75,-0.840576,-0.33596,1.139069,weak_down,1.0,0.0,-0.0006859661,0.3
+fold_02,breadth_only,q20_q80,2019-11-01,- 1.0*deterioration_ratio,0.2,0.8,-0.840576,-0.86144,1.22204,neutral_flat,0.8,0.2,-0.0008932125,0.1
+fold_02,fixed_blend_60_40,fixed,2019-11-01,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,-0.0009460834,0.067692
+fold_02,delta_median_only,q30_q70,2020-05-06,+ 1.0*score_delta_median,0.3,0.7,0.18114,-0.379743,0.257506,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,delta_median_only,q33_q67,2020-05-06,+ 1.0*score_delta_median,0.33,0.67,0.18114,-0.275906,-0.016648,strong_up,0.6,0.4,0.0013568957,0.06
+fold_02,delta_median_only,q25_q75,2020-05-06,+ 1.0*score_delta_median,0.25,0.75,0.18114,-0.552805,0.714429,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,delta_median_only,q20_q80,2020-05-06,+ 1.0*score_delta_median,0.2,0.8,0.18114,-0.57082,1.277442,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,breadth_only,q30_q70,2020-05-06,- 1.0*deterioration_ratio,0.3,0.7,0.207472,-0.33596,0.69656,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,breadth_only,q33_q67,2020-05-06,- 1.0*deterioration_ratio,0.33,0.67,0.207472,-0.33596,0.431055,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,breadth_only,q25_q75,2020-05-06,- 1.0*deterioration_ratio,0.25,0.75,0.207472,-0.33596,1.139069,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,breadth_only,q20_q80,2020-05-06,- 1.0*deterioration_ratio,0.2,0.8,0.207472,-0.86144,1.22204,neutral_flat,0.8,0.2,0.0012946321,0.05
+fold_02,fixed_blend_60_40,fixed,2020-05-06,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,0.0013568957,0.06
+fold_02,delta_median_only,q30_q70,2020-09-01,+ 1.0*score_delta_median,0.3,0.7,-1.460167,-0.379743,0.257506,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,delta_median_only,q33_q67,2020-09-01,+ 1.0*score_delta_median,0.33,0.67,-1.460167,-0.275906,-0.016648,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,delta_median_only,q25_q75,2020-09-01,+ 1.0*score_delta_median,0.25,0.75,-1.460167,-0.552805,0.714429,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,delta_median_only,q20_q80,2020-09-01,+ 1.0*score_delta_median,0.2,0.8,-1.460167,-0.57082,1.277442,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,breadth_only,q30_q70,2020-09-01,- 1.0*deterioration_ratio,0.3,0.7,-1.427482,-0.33596,0.69656,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,breadth_only,q33_q67,2020-09-01,- 1.0*deterioration_ratio,0.33,0.67,-1.427482,-0.33596,0.431055,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,breadth_only,q25_q75,2020-09-01,- 1.0*deterioration_ratio,0.25,0.75,-1.427482,-0.33596,1.139069,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,breadth_only,q20_q80,2020-09-01,- 1.0*deterioration_ratio,0.2,0.8,-1.427482,-0.86144,1.22204,weak_down,1.0,0.0,-9.24601e-05,0.25
+fold_02,fixed_blend_60_40,fixed,2020-09-01,fixed_60_40,<NA>,<NA>,<NA>,<NA>,<NA>,fixed,0.6,0.4,6.08806e-05,0.063333

@@ -42,16 +42,19 @@ def initialize(context):
 
     # Overlay logic:
     # compare each year's active factor set with the same period last year,
-    # evaluate deterioration inside the post-filter candidate pool, and map
-    # deterioration breadth linearly into treasury weight.
-    g.overlay_variant = 'treasury_yoy_candidate_pool_linear'
+    # evaluate deterioration inside the candidate pool, map the ratio into
+    # treasury weight, then add extra defense when deterioration persists
+    # across consecutive rebalance dates.
+    g.overlay_variant = 'treasury_yoy_candidate_pool_linear_persist_thr60'
     g.defensive_asset = '511010.XSHG'
     g.regime_compare_mode = 'same_period_last_year'
-    g.regime_stock_deterioration_threshold = 0.50
+    g.regime_stock_deterioration_threshold = 0.60
     g.regime_min_valid_factor_count = 2
     g.regime_weight_floor = 0.00
-    g.regime_weight_cap = 1.00
+    g.regime_weight_cap = 0.60
     g.regime_weight_power = 1.00
+    g.regime_persistence_add_2 = 0.10
+    g.regime_persistence_add_3p = 0.20
 
     # The local V4 annual research currently covers annual_01 to annual_05.
     # annual_05 is kept open-ended so a backtest ending on 2026-05-31 can still run.
@@ -453,6 +456,9 @@ def do_rebalance(context):
         'strategy_line': g.strategy_line,
         'overlay_variant': g.overlay_variant,
         'regime_name': regime_info['regime_name'],
+        'signal_value': round(regime_info['signal_value'], 6),
+        'bad_streak': int(regime_info['bad_streak']),
+        'persistence_add': round(regime_info['persistence_add'], 4),
         'equity_weight': round(equity_weight, 4),
         'defensive_weight': round(defensive_weight, 4),
         'defensive_asset': defensive_asset if defensive_asset is not None else '',
@@ -467,6 +473,9 @@ def do_rebalance(context):
         'factor_date': str(factor_date),
         'overlay_variant': g.overlay_variant,
         'regime_name': regime_info['regime_name'],
+        'signal_value': round(regime_info['signal_value'], 6),
+        'bad_streak': int(regime_info['bad_streak']),
+        'persistence_add': round(regime_info['persistence_add'], 4),
         'equity_weight': round(equity_weight, 4),
         'defensive_weight': round(defensive_weight, 4),
         'defensive_asset': defensive_asset if defensive_asset is not None else '',
@@ -799,6 +808,9 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
     if pool_df is None or pool_df.empty or not factor_specs:
         return {
             'regime_name': 'pool_unavailable',
+            'signal_value': 0.0,
+            'bad_streak': 0,
+            'persistence_add': 0.0,
             'equity_weight': 1.0,
             'defensive_weight': 0.0,
             'defensive_asset': None,
@@ -812,6 +824,9 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
     if reference_context is None:
         return {
             'regime_name': 'reference_unavailable',
+            'signal_value': 0.0,
+            'bad_streak': 0,
+            'persistence_add': 0.0,
             'equity_weight': 1.0,
             'defensive_weight': 0.0,
             'defensive_asset': None,
@@ -869,6 +884,9 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
     if not factor_flag_cols:
         return {
             'regime_name': 'no_deterioration_factors',
+            'signal_value': 0.0,
+            'bad_streak': 0,
+            'persistence_add': 0.0,
             'equity_weight': 1.0,
             'defensive_weight': 0.0,
             'defensive_asset': None,
@@ -888,10 +906,63 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
         if eligible_stock_count > 0 else 0.0
     )
 
-    defensive_weight_raw = deteriorated_stock_ratio ** float(g.regime_weight_power)
+    previous_signal_value = 0.0
+    if g.regime_history_log:
+        try:
+            previous_signal_value = float(g.regime_history_log[-1].get('signal_value', 0.0))
+        except Exception:
+            previous_signal_value = 0.0
+
+    if deteriorated_stock_ratio < previous_signal_value:
+        bad_streak = 0
+        persistence_add = 0.0
+        defensive_weight = 0.0
+        equity_weight = 1.0
+        regime_name = 'pool_yoy_deterioration_improved_exit'
+        summary_parts = [
+            'compare_mode=%s' % g.regime_compare_mode,
+            'pool=%d' % len(stocks),
+            'eligible=%d' % eligible_stock_count,
+            'deteriorated=%d' % deteriorated_stock_count,
+            'prev_signal=%.3f' % previous_signal_value,
+            'stock_ratio=%.3f' % deteriorated_stock_ratio,
+            'exit_on_improve=1',
+            'equity_weight=1.000',
+            'treasury_weight=0.000',
+        ]
+        if factor_breadth_parts:
+            summary_parts.append('factor_breadth=' + '|'.join(factor_breadth_parts))
+        return {
+            'regime_name': regime_name,
+            'signal_value': deteriorated_stock_ratio,
+            'bad_streak': bad_streak,
+            'persistence_add': persistence_add,
+            'equity_weight': equity_weight,
+            'defensive_weight': defensive_weight,
+            'defensive_asset': None,
+            'summary': ' ; '.join(summary_parts),
+        }
+
+    current_is_bad = deteriorated_stock_ratio > 0
+    prior_bad_streak = 0
+    if current_is_bad:
+        for item in reversed(g.regime_history_log):
+            if float(item.get('signal_value', 0.0)) > 0:
+                prior_bad_streak += 1
+            else:
+                break
+    bad_streak = prior_bad_streak + 1 if current_is_bad else 0
+    if bad_streak >= 3:
+        persistence_add = float(g.regime_persistence_add_3p)
+    elif bad_streak >= 2:
+        persistence_add = float(g.regime_persistence_add_2)
+    else:
+        persistence_add = 0.0
+
+    defensive_weight_raw = (deteriorated_stock_ratio ** float(g.regime_weight_power)) + persistence_add
     defensive_weight = float(np.clip(defensive_weight_raw, g.regime_weight_floor, g.regime_weight_cap))
     equity_weight = float(np.clip(1.0 - defensive_weight, 0.0, 1.0))
-    regime_name = 'pool_yoy_deterioration'
+    regime_name = 'pool_yoy_deterioration_persist'
 
     summary_parts = [
         'compare_mode=%s' % g.regime_compare_mode,
@@ -899,6 +970,8 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
         'eligible=%d' % eligible_stock_count,
         'deteriorated=%d' % deteriorated_stock_count,
         'stock_ratio=%.3f' % deteriorated_stock_ratio,
+        'bad_streak=%d' % bad_streak,
+        'persistence_add=%.3f' % persistence_add,
         'equity_weight=%.3f' % equity_weight,
         'treasury_weight=%.3f' % defensive_weight,
     ]
@@ -906,6 +979,9 @@ def evaluate_fundamental_regime(factor_date, factor_specs, pool_df):
         summary_parts.append('factor_breadth=' + '|'.join(factor_breadth_parts))
     return {
         'regime_name': regime_name,
+        'signal_value': deteriorated_stock_ratio,
+        'bad_streak': bad_streak,
+        'persistence_add': persistence_add,
         'equity_weight': equity_weight,
         'defensive_weight': defensive_weight,
         'defensive_asset': resolve_defensive_asset(g.defensive_asset, equity_weight),

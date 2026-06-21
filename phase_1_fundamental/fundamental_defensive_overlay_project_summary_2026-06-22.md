@@ -134,6 +134,47 @@ Interpretation:
 - drawdown remained better than baseline and only slightly above `cash_6040_4055`
 - this is the strongest candidate found in the current round
 
+## Treasury Branch Follow-Up
+
+We also validated a second branch:
+
+- compare each active annual factor with the same period one year earlier
+- measure deterioration inside the filtered candidate pool
+- map treasury exposure from deterioration breadth
+
+Rolling research files:
+
+- [build_fundamental_defensive_overlay_yoy_pool_linear_rolling_validation_v2.py](D:/hh/codex/v4/phase_1_fundamental/build_fundamental_defensive_overlay_yoy_pool_linear_rolling_validation_v2.py)
+- [build_fundamental_defensive_overlay_yoy_pool_linear_persist_rolling_validation_v3.py](D:/hh/codex/v4/phase_1_fundamental/build_fundamental_defensive_overlay_yoy_pool_linear_persist_rolling_validation_v3.py)
+- [build_fundamental_defensive_overlay_yoy_pool_linear_persist_exit_on_improve_rolling_validation_v4.py](D:/hh/codex/v4/phase_1_fundamental/build_fundamental_defensive_overlay_yoy_pool_linear_persist_exit_on_improve_rolling_validation_v4.py)
+
+JoinQuant candidate files:
+
+- [joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr40_v1.py](D:/hh/codex/v4/phase_1_fundamental/joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr40_v1.py)
+- [joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr50_v1.py](D:/hh/codex/v4/phase_1_fundamental/joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr50_v1.py)
+- [joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr60_v1.py](D:/hh/codex/v4/phase_1_fundamental/joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_treasury_thr60_v1.py)
+- [joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_persist_treasury_thr60_v1.py](D:/hh/codex/v4/phase_1_fundamental/joinquant_v4_annual_backtest_strategy_defensive_overlay_yoy_pool_linear_persist_treasury_thr60_v1.py)
+
+Rolling conclusions:
+
+- `v2` linear treasury mapping preferred `thr40` locally, with `thr50` second and `thr60` weakest of the three
+- when moved into full JoinQuant backtests, `thr40` and `thr50` were too defensive
+- `thr60` became the least-bad treasury version, but still lagged the short-bond segmented candidate
+- `v3` adding persistence (`+10%` on streak 2, `+20%` on streak 3+, cap `60%`) improved on plain `thr60` in local rolling
+- `v4` forcing immediate defensive exit on any improvement weakened the local rolling result versus `v3`
+
+JoinQuant conclusions:
+
+- linear treasury branch underperformed the main short-bond segmented branch
+- persistence did not rescue the treasury branch enough to overtake `shortbond_6040_4055`
+- immediate-exit-on-improvement looked conceptually clean but weakened the local evidence
+
+Branch decision:
+
+- keep the treasury branch as an archived research branch
+- do not promote it above the short-bond segmented candidate
+- keep `shortbond_6040_4055` as the live main candidate
+
 ## Current Recommended Candidate
 
 Current best candidate:
@@ -156,6 +197,7 @@ At this stage, the most defensible simplified conclusion is:
 - keep the original pure-fundamental strategy as the baseline
 - the overlay appears useful mainly through the warning-state risk reduction
 - `shortbond` works better than `cash` in realized JoinQuant testing
+- the treasury breadth-mapping branch is research-complete for now but not promoted
 - severe-state micro-tuning is not yet a priority
 
 ## Backup Targets

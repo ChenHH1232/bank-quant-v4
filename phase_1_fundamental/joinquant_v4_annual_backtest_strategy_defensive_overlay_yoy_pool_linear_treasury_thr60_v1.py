@@ -44,10 +44,10 @@ def initialize(context):
     # compare each year's active factor set with the same period last year,
     # evaluate deterioration inside the post-filter candidate pool, and map
     # deterioration breadth linearly into treasury weight.
-    g.overlay_variant = 'treasury_yoy_candidate_pool_linear'
+    g.overlay_variant = 'treasury_yoy_candidate_pool_linear_thr60'
     g.defensive_asset = '511010.XSHG'
     g.regime_compare_mode = 'same_period_last_year'
-    g.regime_stock_deterioration_threshold = 0.50
+    g.regime_stock_deterioration_threshold = 0.60
     g.regime_min_valid_factor_count = 2
     g.regime_weight_floor = 0.00
     g.regime_weight_cap = 1.00

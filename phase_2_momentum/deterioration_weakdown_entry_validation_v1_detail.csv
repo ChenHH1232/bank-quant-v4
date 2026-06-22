@@ -1,0 +1,9 @@
+﻿fold_id,rebalance_date,validation_start,validation_end,direct_mom12_return,next_direct_mom12_return,combined_state_proxy,deterioration_state_proxy,price_state_proxy,price_weak_down,deterioration_weak_down,combined_weak_down,deterioration_only_weak_down,price_only_weak_down,both_weak_down,next_mom_negative_flag
+fold_01,2018-11-01 00:00:00,2018-11-01,2019-11-01,-0.0010849389,-0.0016229707,weak_down,weak_down,weak_down,1,1,1,0,0,1,1.0
+fold_01,2019-05-06 00:00:00,2018-11-01,2019-11-01,-0.0016229707,0.0031771003,weak_down,weak_down,neutral_flat,0,1,1,1,0,0,0.0
+fold_01,2019-09-02 00:00:00,2018-11-01,2019-11-01,0.0031771003,-0.0025286005,strong_up,strong_up,neutral_flat,0,0,0,0,0,0,1.0
+fold_01,2019-11-01 00:00:00,2018-11-01,2019-11-01,-0.0025286005,-0.0010849389,weak_down,weak_down,nan,0,1,1,1,0,0,1.0
+fold_02,2019-09-02 00:00:00,2019-09-02,2020-09-01,0.0031771003,-0.0025286005,strong_up,strong_up,neutral_flat,0,0,0,0,0,0,1.0
+fold_02,2019-11-01 00:00:00,2019-09-02,2020-09-01,-0.0025286005,0.0001378789,weak_down,weak_down,neutral_flat,0,1,1,1,0,0,0.0
+fold_02,2020-05-06 00:00:00,2019-09-02,2020-09-01,0.0001378789,-0.002633316,weak_down,neutral_flat,weak_down,1,0,1,0,1,0,1.0
+fold_02,2020-09-01 00:00:00,2019-09-02,2020-09-01,-0.002633316,0.0031771003,weak_down,weak_down,nan,0,1,1,1,0,0,0.0

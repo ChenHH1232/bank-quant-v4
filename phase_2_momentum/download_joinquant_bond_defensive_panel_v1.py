@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -14,18 +15,32 @@ OUTPUT_CSV = SCRIPT_DIR / "bond_defensive_panel_v1.csv"
 OUTPUT_MD = SCRIPT_DIR / "bond_defensive_panel_v1.md"
 
 DEFAULT_BOND_CODE = "511010.XSHG"
-RESEARCH_END = pd.Timestamp("2021-05-01")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Download JoinQuant bond ETF forward-return panel aligned to bank rebalance dates.")
-    parser.add_argument("--username", required=True, help="JoinQuant username")
-    parser.add_argument("--password", required=True, help="JoinQuant password")
+    parser.add_argument("--username", default=os.getenv("JQ_USERNAME"), help="JoinQuant username")
+    parser.add_argument("--password", default=os.getenv("JQ_PASSWORD"), help="JoinQuant password")
     parser.add_argument("--bond-code", default=DEFAULT_BOND_CODE, help="Bond ETF code, default 511010.XSHG")
+    parser.add_argument(
+        "--rebalance-end",
+        default=None,
+        help="Optional inclusive rebalance-date cutoff in YYYY-MM-DD format. Default keeps the full available panel.",
+    )
+    parser.add_argument(
+        "--output-csv",
+        default=str(OUTPUT_CSV),
+        help="Output CSV path. Default writes to bond_defensive_panel_v1.csv",
+    )
+    parser.add_argument(
+        "--output-md",
+        default=str(OUTPUT_MD),
+        help="Output markdown summary path. Default writes to bond_defensive_panel_v1.md",
+    )
     return parser.parse_args()
 
 
-def load_rebalance_windows() -> pd.DataFrame:
+def load_rebalance_windows(rebalance_end: str | None) -> pd.DataFrame:
     df = pd.read_csv(
         TRAINING_PANEL_PATH,
         usecols=["rebalance_date", "y_quarter_end_date"],
@@ -34,7 +49,9 @@ def load_rebalance_windows() -> pd.DataFrame:
     df["rebalance_date"] = pd.to_datetime(df["rebalance_date"])
     df["y_quarter_end_date"] = pd.to_datetime(df["y_quarter_end_date"])
     df = df.dropna().drop_duplicates().sort_values("rebalance_date").copy()
-    df = df[df["rebalance_date"] < RESEARCH_END].copy()
+    if rebalance_end:
+        cutoff = pd.Timestamp(rebalance_end)
+        df = df[df["rebalance_date"] <= cutoff].copy()
     return df.reset_index(drop=True)
 
 
@@ -121,7 +138,7 @@ def build_panel(bond_code: str, windows_df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def write_summary(panel_df: pd.DataFrame, bond_code: str) -> None:
+def write_summary(panel_df: pd.DataFrame, bond_code: str, output_csv: Path, output_md: Path) -> None:
     lines = [
         "# Bond Defensive Panel V1",
         "",
@@ -139,24 +156,32 @@ def write_summary(panel_df: pd.DataFrame, bond_code: str) -> None:
                 f"- min bond forward return: `{panel_df['bond_forward_return'].min():.10f}`",
                 f"- max bond forward return: `{panel_df['bond_forward_return'].max():.10f}`",
                 "",
-                f"- [bond_defensive_panel_v1.csv]({OUTPUT_CSV})",
+                f"- [{output_csv.name}]({output_csv})",
             ]
         )
-    OUTPUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    output_md.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
     args = parse_args()
+    if not args.username or not args.password:
+        raise RuntimeError("Missing JoinQuant credentials. Pass --username/--password or set JQ_USERNAME/JQ_PASSWORD.")
+
+    output_csv = Path(args.output_csv).resolve()
+    output_md = Path(args.output_md).resolve()
+    output_csv.parent.mkdir(parents=True, exist_ok=True)
+    output_md.parent.mkdir(parents=True, exist_ok=True)
+
     auth(args.username, args.password)
-    windows_df = load_rebalance_windows()
+    windows_df = load_rebalance_windows(args.rebalance_end)
     panel_df = build_panel(args.bond_code, windows_df)
     if panel_df.empty:
         raise RuntimeError("Downloaded bond panel is empty.")
-    panel_df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
-    write_summary(panel_df, args.bond_code)
+    panel_df.to_csv(output_csv, index=False, encoding="utf-8-sig")
+    write_summary(panel_df, args.bond_code, output_csv, output_md)
     print("query_count=%s" % str(get_query_count()))
-    print(OUTPUT_CSV)
-    print(OUTPUT_MD)
+    print(output_csv)
+    print(output_md)
 
 
 if __name__ == "__main__":

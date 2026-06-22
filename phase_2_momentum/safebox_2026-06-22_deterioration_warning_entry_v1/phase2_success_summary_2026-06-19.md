@@ -244,23 +244,6 @@ Fundamental deterioration as weak-down entry signal:
 Key references:
 - [deterioration_weakdown_entry_validation_v1.md](D:\hh\codex\v4\phase_2_momentum\deterioration_weakdown_entry_validation_v1.md)
 - [two_stage_weakdown_entry_validation_v1.md](D:\hh\codex\v4\phase_2_momentum\two_stage_weakdown_entry_validation_v1.md)
-- [fundamental_conditioned_momentum_threshold_validation_v1.md](D:\hh\codex\v4\phase_2_momentum\fundamental_conditioned_momentum_threshold_validation_v1.md)
-
-Fundamental-conditioned momentum threshold:
-- a further test was also completed on whether fundamental deterioration or improvement should change the monthly momentum release threshold
-- the current implementation used:
-- deteriorating regime => stricter release cut
-- improving regime => easier release cut
-- neutral regime => midpoint cut
-- this idea is economically coherent
-- but in the current rolling validation it did not beat the simpler fixed-threshold baseline
-- current result:
-- conditioned-threshold cum return = `0.006663`
-- fixed `mom6_positive_ratio_q50` cum return = `0.006799`
-- so the present evidence does not support promoting a fundamental-conditioned release threshold into the active state-machine main line
-- the current interpretation should be:
-- keep this branch archived as a conceptually valid but presently unnecessary layer of complexity
-- and retain the simpler fixed `mom6_positive_ratio_q50` release rule as the preferred implementation
 
 ## Two-Layer State Machine
 
@@ -331,69 +314,31 @@ Comparison setup:
 - `fixed_60_40`
 - `annual_entry_monthly_exit_slow_fundamental`
 - `quarterly_top20_mom12_top6`
-- later extension also tested:
-- `mom12_top10_then_fundamental_top6`
 - this closes the race inside one fixed comparison frame instead of mixing sparse and dense snapshot families
 
 Current ranking on the common sample:
-- `mom12_top10_then_fundamental_top6` cum return = `0.013706`
 - `quarterly_top20_mom12_top6` cum return = `0.010141`
 - `fixed_60_40` cum return = `0.007940`
 - `annual_entry_monthly_exit_slow_fundamental` cum return = `0.007116`
 - relative to `fixed_60_40`:
-- `mom12_top10_then_fundamental_top6` delta = `0.005766`
 - `quarterly_top20_mom12_top6` delta = `0.002201`
 - `annual_entry_monthly_exit_slow_fundamental` delta = `-0.000824`
 
 Interpretation:
-- on the current pre-2021 common monthly sample, the strongest formal candidate is now the momentum-first, fundamental-second-stage ranking line
-- current best reading of that line is:
-- monthly momentum remains the fast primary selector
-- latest visible fundamental score only refines quality inside the momentum candidate set
-- this currently works better than both:
-- quarterly fundamental gate first, then monthly momentum
-- and the separate-sleeve fixed `60/40` allocation baseline
+- on the current pre-2021 common monthly sample, the strongest formal candidate is now the quarterly fundamental gate plus monthly momentum ranking line
 - `fixed_60_40` remains the strongest capital-allocation candidate among the dual-engine and state-routing family
 - `annual_entry_monthly_exit_slow_fundamental` remains a coherent lower-risk structural alternative, but it does not win the final formal-candidate horse race
-- the key remaining caution is that the leading monthly stock-selection candidates are fully invested while the dual-engine family intentionally preserves some cash under cap discipline
+- the key remaining caution is that the gated momentum candidate is fully invested while the dual-engine family intentionally preserves some cash under cap discipline
 - so the current ranking is valid for project-level candidate ordering, but the capital-deployment difference should stay explicit in the final report
 
 Key references:
 - [formal_candidate_rolling_comparison_v1.md](D:\hh\codex\v4\phase_2_momentum\formal_candidate_rolling_comparison_v1.md)
-- [momentum_first_fundamental_tiebreak_validation_v1.md](D:\hh\codex\v4\phase_2_momentum\momentum_first_fundamental_tiebreak_validation_v1.md)
 - [quarterly_fundamental_monthly_momentum_validation_note_v1.md](D:\hh\codex\v4\phase_2_momentum\quarterly_fundamental_monthly_momentum_validation_note_v1.md)
 - [slow_fundamental_fast_exit_execution_validation_note_v1.md](D:\hh\codex\v4\phase_2_momentum\slow_fundamental_fast_exit_execution_validation_note_v1.md)
 - [active_mainline_final_validation_packet_v1.md](D:\hh\codex\v4\phase_2_momentum\active_mainline_final_validation_packet_v1.md)
 
 ## Process Discipline
 
-- frozen post-2021 acceptance result for the momentum-first fundamental-second-stage branch is now also complete
-- tested shortlist:
-- `direct_mom12_top6`
-- `mom12_top10_then_fundamental_top6`
-- `mom12_top10_then_fundamental_top4`
-- acceptance ranking:
-- `direct_mom12_top6`
-- strategy return = `40.09%`
-- excess return = `16.88%`
-- annualized return = `7.21%`
-- max drawdown = `21.30%`
-- `mom12_top10_then_fundamental_top6`
-- strategy return = `27.18%`
-- excess return = `6.10%`
-- annualized return = `5.09%`
-- max drawdown = `21.45%`
-- `mom12_top10_then_fundamental_top4`
-- strategy return = `14.21%`
-- excess return = `-4.72%`
-- annualized return = `2.78%`
-- max drawdown = `27.67%`
-- current interpretation is:
-- the momentum-first fundamental-second-stage family looked strong in pre-2021 rolling research
-- but it did not survive the frozen post-2021 acceptance test strongly enough to replace the simpler pure momentum main line
-- therefore the executable momentum main line should stay with `direct_mom12_top6`
-- `mom12_top10_then_fundamental_top6` should remain archived as a research-positive but acceptance-failed candidate
-- `mom12_top10_then_fundamental_top4` should be treated as rejected for deployment
 - the `2021-05-31` onward JoinQuant window is frozen as out-of-sample acceptance for momentum
 - do not continue tuning momentum plans against that same out-of-sample segment
 - mean-reversion should proceed as a separate short-horizon research branch and should not be mixed into the momentum explanation layer

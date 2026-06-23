@@ -4,6 +4,14 @@ Use this guide with:
 
 - `joinquant_v4_annual_backtest_strategy_base_core_6_manual_style_switch_v1.py`
 
+Status note:
+
+- this guide is an execution convenience note for the current codebase
+- it does **not** mean manual style switching has already been validated as a superior production framework
+- the validated statement today is narrower:
+  - `balanced` is the formal default line
+  - `core_level` is an accepted structural variant
+
 Switch location:
 
 - set `g.manual_style_mode` in `initialize`
@@ -44,7 +52,7 @@ Prefer `core_level` when the next stage is expected to favor:
 
 Practical reading:
 
-- use `core_level` when you expect the market to reward capital strength, safety, and balance-sheet quality more than EPS-style expression
+- use `core_level` only when you have a clear forward-looking thesis that the market will reward capital strength, safety, and balance-sheet quality more than EPS-style expression
 
 ## When Not To Switch
 
@@ -58,7 +66,8 @@ Current research conclusion:
 
 - automatic timing rules around these two styles were not strong enough
 - monthly style-timing also failed executable confirmation
-- therefore switching should remain a deliberate human decision, not a routine optimization loop
+- therefore switching should remain a deliberate and conservative human decision, not a routine optimization loop
+- if this is used in practice, the decision should ideally be recorded as an ex-ante note rather than changed retrospectively after the year is known
 
 ## Working Rule
 
@@ -69,3 +78,8 @@ If judgment is unclear:
 If there is a clear next-year thesis around capital strength and conservative balance sheets:
 
 - switch to `core_level`
+
+Recommended operational caution:
+
+- treat `balanced` as the only formal default history line
+- treat `core_level` as a shadow or explicit discretionary variant unless a future logged regime process proves useful over time

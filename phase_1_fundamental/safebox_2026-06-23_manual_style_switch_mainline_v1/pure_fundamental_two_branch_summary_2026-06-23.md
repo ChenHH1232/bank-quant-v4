@@ -3,7 +3,7 @@
 Scope:
 - freeze the current interpretation of the pure-fundamental line after the `base_core_6` follow-up research
 - consolidate the recent branch tests around `eps`, `core_level_capital_adequacy_ratio`, and quality-layer overweight
-- preserve the current view of what remains executable, what stays secondary, and what may later support manual annual switching
+- preserve the current view of what remains executable, what stays secondary, and what may later support a more formal human-in-the-loop regime workflow
 
 Current main executable branch:
 - shell = `base_core_6 = base_core_7 - derived__log_total_assets`
@@ -34,7 +34,7 @@ Branch B: capital-quality side candidate
 - interpretation:
 - this branch did not beat the main line on absolute return
 - but it did show a slightly steadier excess path and slightly better risk-adjusted behavior
-- therefore it is not strong enough to replace Branch A, but strong enough to remain an accepted side candidate
+- therefore it is not strong enough to replace Branch A, but strong enough to remain an accepted structural side candidate
 
 Yearly comparison between the two pure-fundamental branches:
 - `2021`: Branch B clearly lagged Branch A
@@ -74,13 +74,17 @@ Forward-looking interpretation:
 - but the current automatic switching rules were too crude and did not beat the cleaner static alternatives strongly enough
 
 Manual switching note for future use:
-- a future human-in-the-loop process could plausibly choose between the two pure-fundamental branches each year:
-  - Branch A when the next year is expected to favor profitability and balanced stock selection
-  - Branch B when the next year is expected to favor stronger capital quality, large-bank resilience, or stricter balance-sheet preference
-- this should be treated as a new explicit forecasting workflow, not as an already-confirmed automatic strategy upgrade
+- a future human-in-the-loop process could plausibly choose between the two pure-fundamental branches each year
+- however this should currently be treated as a **research hypothesis**, not as an already-confirmed execution framework
+- what is established today:
+  - Branch A is the formal default execution line
+  - Branch B is an accepted structural variant worth monitoring
+- what is not yet established today:
+  - that a human can reliably identify the right regime in advance
+- therefore any future manual-switch workflow should first be logged as an explicit ex-ante decision process or shadow decision record before it is promoted into formal execution history
 
 Decision:
 - keep Branch A as the default pure-fundamental executable main line
-- archive Branch B as the formal side candidate worth monitoring
+- archive Branch B as the formal structural side candidate worth monitoring
 - archive persistent quality overweight as a research-positive but JoinQuant-rejected branch
-- preserve the manual annual branch-switch idea as a future discretionary framework, not as a current automated rule
+- preserve the manual annual branch-switch idea only as a future discretionary research framework, not as a current confirmed strategy layer

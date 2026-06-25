@@ -1,0 +1,10 @@
+﻿window_label,strategy_name,period_count,cum_return,mean_return,max_drawdown,positive_period_ratio,mean_delay_days,mean_cash_days
+test,baseline_full_entry,25,1.50052,0.041889,-0.191616,0.56,0.0,0.0
+test,split_50_50_time,25,1.16761,0.03505,-0.174506,0.52,27.32,13.66
+test,split_50_50_reversion,25,1.51369,0.041977,-0.177399,0.56,7.16,3.58
+review,baseline_full_entry,12,0.240004,0.023731,-0.300312,0.583333,0.0,0.0
+review,split_50_50_time,12,0.172874,0.017444,-0.261291,0.5,27.583333,13.791667
+review,split_50_50_reversion,12,0.237895,0.023598,-0.292506,0.583333,6.083333,3.041667
+all,baseline_full_entry,37,2.100656,0.036,-0.216898,0.567568,0.0,0.0
+all,split_50_50_time,37,1.542332,0.02934,-0.192249,0.513514,27.405405,13.702703
+all,split_50_50_reversion,37,2.111685,0.036016,-0.221136,0.567568,6.810811,3.405405

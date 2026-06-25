@@ -1,0 +1,5 @@
+﻿rebalance_date,fold_id,scenario_name,selected_factor_count,local_pool_count,top_bucket_count,target_weight_each,train_start,test_start,review_start,review_end
+2021-05-06,annual_01,base_core_7,6,26,5,0.2,2014-05-05,2019-05-06,2021-05-06,2022-05-05
+2022-05-05,annual_01,base_core_7,6,27,6,0.1666666667,2014-05-05,2019-05-06,2021-05-06,2022-05-05
+2024-05-06,annual_04,base_core_7,2,29,6,0.1666666667,2017-05-02,2022-05-05,2024-05-06,2025-05-05
+2025-05-06,annual_05,base_core_7,4,31,6,0.1666666667,2018-05-02,2023-05-04,2025-05-06,2026-05-05

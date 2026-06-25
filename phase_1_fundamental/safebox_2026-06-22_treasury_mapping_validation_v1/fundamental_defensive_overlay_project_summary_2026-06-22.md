@@ -296,25 +296,6 @@ At this stage, the most defensible simplified conclusion is:
 - the treasury breadth-mapping branch is research-complete for now but not promoted
 - severe-state micro-tuning is not yet a priority
 
-## Product-Line Clarification
-
-The defensive overlay should now be treated as a separate product line rather than as continued tuning of the stock-selection main line.
-
-Recommended structure:
-
-- pure-fundamental balanced line:
-  - stock-selection core only
-- pure-fundamental structural variants:
-  - separate research variants such as `core_level`
-- balanced plus shortbond defensive overlay:
-  - separate risk-management line
-
-Interpretation:
-
-- the overlay should be judged mainly as allocation / drawdown management logic
-- it should not be mixed back into pure stock-selection factor search
-- the treasury breadth branch remains archived unless later evidence reopens it
-
 ## Backup Targets
 
 Recommended backup set:

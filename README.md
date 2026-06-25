@@ -39,6 +39,8 @@ This means V4 did not end as a theoretically complete "fundamental + momentum + 
 当前第一候选为 `core_level_shadow_shortbond_overlay`。  
 The current top-ranked branch is `core_level_shadow_shortbond_overlay`.
 
+![core_level_shadow_shortbond_overlay backtest](./assets/core_level_shadow_shortbond_overlay_backtest.png)
+
 JoinQuant 回测核心指标：  
 Key JoinQuant backtest metrics:
 
@@ -68,6 +70,8 @@ Backtest window: `2021-05-31` to `2026-05-29`; max drawdown interval: `2022/04/1
 
 当前第二候选为 `balanced_shortbond_overlay`。  
 The current second-ranked branch is `balanced_shortbond_overlay`.
+
+![balanced_shortbond_overlay backtest](./assets/balanced_shortbond_overlay_backtest.png)
 
 JoinQuant 回测核心指标：  
 Key JoinQuant backtest metrics:
@@ -171,6 +175,8 @@ Backtest window: `2021-05-31` to `2026-05-29`; max drawdown interval: `2022/04/1
 
 虽然“基本面 + 动量 + 均值回归”的正式策略结构最终被排除，但它留下了一个我认为很有意思的解释框架。  
 Although the formal "fundamental + momentum + mean reversion" structure was ultimately excluded, it left behind an interpretation that I still find conceptually interesting.
+
+![fundamental momentum mean reversion physics explainer](./assets/fundamental_momentum_mean_reversion_physics_explainer.png)
 
 这个解释把股价变化类比成一个空间中的物理过程：  
 It treats stock-price movement as a physics-like process in space:
